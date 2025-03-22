@@ -2,9 +2,10 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Play, DollarSign, Calendar, Building2, MessageCircle, MapPin, Mail, Phone, Star } from "lucide-react";
+import { Play, DollarSign, Calendar, Building2, MessageCircle, MapPin, Mail, Phone } from "lucide-react";
 import { Button } from "../components/ui/button";
 import Navbar from "../components/navbar";
+import Carousel from "../components/carousel";
 
 export default function Home() {
   const scrollLeft = (id: string) => {
@@ -54,9 +55,8 @@ export default function Home() {
         }}
       >
         <div className="max-w-7xl mx-auto px-4 py-20 md:py-32 text-center text-black">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Serenity & Company</h1>
-          <h2 className="text-2xl md:text-4xl font-semibold mb-4">Specialists</h2>
-          <h3 className="text-xl md:text-3xl font-medium mb-12">in Mexico, Mexico</h3>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">Serenity Surgery Planner</h1>
+          <h2 className="text-2xl md:text-4xl font-semibold mb-4">Specialists in Puebla, Mexico</h2>
 
           <div className="space-y-2 max-w-2xl mx-auto">
             <p className="text-lg md:text-xl">Surgeries offered 7 days a week</p>
@@ -65,15 +65,15 @@ export default function Home() {
           </div>
 
           <p className="mt-8 text-lg">
-            We specialize in but also provide and
-            <Link href="#" className="underline ml-1">
-              plastic surgery
+            We specialize in 
+            <Link href="#services" className="underline ml-1">
+              Plastic Surgery Services
             </Link>
             .
           </p>
 
           <Button className="mt-8 bg-[#F5A623] hover:bg-[#E09612] text-white px-8 py-6 text-lg rounded-full">
-            SEE PRICING & WHAT&apos;S INCLUDED
+            See princing & what&apos;s included
           </Button>
         </div>
       </section>
@@ -383,6 +383,8 @@ export default function Home() {
         </div>
       </div>
     </section>
+
+    <Carousel/>
 
       {/* Footer */}
       <footer className="bg-[#3B5998] py-8 px-4 text-white">
