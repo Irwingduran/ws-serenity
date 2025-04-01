@@ -16,6 +16,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Serenity",
   description: "Especialista en Cirugía General, Cirugía Laparoscópica Avanzada y Cirugía Bariátrica.",
+  icons: "/Logo.png"
 };
 
 export default function RootLayout({
@@ -24,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

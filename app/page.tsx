@@ -6,6 +6,9 @@ import { Play, DollarSign, Calendar, Building2, MessageCircle, MapPin, Mail, Pho
 import { Button } from "../components/ui/button";
 import Navbar from "../components/navbar";
 import Carousel from "../components/carousel";
+import Footer from "../components/footer";
+import SocialMediaButtons from "../components/social-media";
+import GallerySection from "../components/gallery";
 
 export default function Home() {
   const scrollLeft = (id: string) => {
@@ -40,14 +43,22 @@ export default function Home() {
     "/gallery/img15.jpeg",
   ];
 
+  const doctors = [
+    { name: "Dr. ", specialty: "specialty hre", id: "doctor1" },
+    { name: "Dr. ", specialty: "specialty here", id: "doctor1" },
+    { name: "Dr. ", specialty: "specialty here", id: "doctor1" },
+    { name: "Dr. ", specialty: "specialty here", id: "doctor1" }
+  ];
+
   return (
     <div className="flex flex-col min-h-screen">
+      <SocialMediaButtons/>
       {/* Navigation */}
       <Navbar/>
 
       {/* Hero Section */}
       <section
-        className="relative bg-[#3B5998]/20 bg-blend-overlay"
+        className="relative bg-[#77B5B2]/90 bg-blend-overlay"
         style={{
           backgroundImage: "url('/img-bg.jpg')",
           backgroundSize: "cover",
@@ -72,7 +83,7 @@ export default function Home() {
             .
           </p>
 
-          <Button className="mt-8 bg-[#F5A623] hover:bg-[#E09612] text-white px-8 py-6 text-lg rounded-full">
+          <Button className="mt-8 bg-[#77B5B2] hover:bg-[#507775] text-white px-8 py-6 text-lg rounded-full">
             See princing & what&apos;s included
           </Button>
         </div>
@@ -81,7 +92,7 @@ export default function Home() {
       {/* About Section */}
       <section className="py-16 px-4 bg-white" id="about">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#3B5998] mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#507775] mb-8">
            About Us
           </h2>
 
@@ -104,60 +115,64 @@ export default function Home() {
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-20 h-20 bg-white/80 rounded-full flex items-center justify-center cursor-pointer">
-                <Play className="w-10 h-10 text-[#4A90E2] ml-1" />
+                <Play className="w-10 h-10 text-c ml-1" />
               </div>
             </div>
           </div>
         </div>
       </section>
 
+     <section>
+      <GallerySection/>
+     </section>
+
       {/* Stats Section */}
-      <section className="py-16 px-4 bg-gradient-to-b from-[#4A90E2] to-[#3B5998]">
+      <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-lg p-8 text-center">
-              <h3 className="text-4xl md:text-5xl font-bold text-[#3B5998] mb-2">27,503</h3>
-              <p className="text-[#3B5998] uppercase tracking-wider font-medium">Surgeries Performed</p>
+            <div className="bg-[#77B5B2] rounded-lg p-8 text-center">
+              <h3 className="text-4xl md:text-5xl font-bold text-white mb-2">27,503</h3>
+              <p className="text-white uppercase tracking-wider font-medium">Surgeries Performed</p>
             </div>
 
-            <div className="bg-white rounded-lg p-8 text-center">
-              <h3 className="text-4xl md:text-5xl font-bold text-[#3B5998] mb-2">5</h3>
-              <p className="text-[#3B5998] uppercase tracking-wider font-medium">Hours from Houston, TX</p>
+            <div className="bg-[#77B5B2] rounded-lg p-8 text-center">
+              <h3 className="text-4xl md:text-5xl font-bold text-white mb-2">5</h3>
+              <p className="text-white uppercase tracking-wider font-medium">Hours from Houston, TX</p>
             </div>
 
-            <div className="bg-white rounded-lg p-8 text-center">
+            <div className="bg-[#77B5B2] rounded-lg p-8 text-center">
               <div className="flex justify-center mb-4">
-                <DollarSign className="w-12 h-12 text-[#3B5998]" />
+                <DollarSign className="w-12 h-12 text-white" />
               </div>
-              <p className="text-[#3B5998] uppercase tracking-wider font-medium">Best Value, All-Inclusive Package</p>
+              <p className="text-white uppercase tracking-wider font-medium">Best Value, All-Inclusive Package</p>
             </div>
 
-            <div className="bg-white rounded-lg p-8 text-center">
+            <div className="bg-[#77B5B2] rounded-lg p-8 text-center">
               <div className="flex justify-center mb-4">
-                <Calendar className="w-12 h-12 text-[#3B5998]" />
+                <Calendar className="w-12 h-12 text-white" />
               </div>
-              <p className="text-[#3B5998] uppercase tracking-wider font-medium">Surgeries 7 Days a Week</p>
+              <p className="text-white uppercase tracking-wider font-medium">Surgeries 7 Days a Week</p>
             </div>
 
-            <div className="bg-white rounded-lg p-8 text-center">
+            <div className="bg-[#77B5B2] rounded-lg p-8 text-center">
               <div className="flex justify-center mb-4">
-                <Building2 className="w-12 h-12 text-[#3B5998]" />
+                <Building2 className="w-12 h-12 text-white" />
               </div>
-              <p className="text-[#3B5998] uppercase tracking-wider font-medium">5-Star Hotel Stay Included</p>
+              <p className="text-white uppercase tracking-wider font-medium">5-Star Hotel Stay Included</p>
             </div>
 
-            <div className="bg-white rounded-lg p-8 text-center">
+            <div className="bg-[#77B5B2] rounded-lg p-8 text-center">
               <div className="flex justify-center mb-4">
-                <MessageCircle className="w-12 h-12 text-[#3B5998]" />
+                <MessageCircle className="w-12 h-12 text-white" />
               </div>
-              <p className="text-[#3B5998] uppercase tracking-wider font-medium">English Speaking Staff</p>
+              <p className="text-white uppercase tracking-wider font-medium">English Speaking Staff</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Service Section */}
-      <section className="py-16 px-4 bg-[#4A90E2]" id="services">
+      <section className="py-16 px-4 bg-[#77B5B2]" id="services">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-6">Our Services</h2>
 
@@ -179,7 +194,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-[#3B5998] mb-4">Liposculpture 360</h3>
+                <h3 className="text-2xl font-bold text-[#507775] mb-4">Liposculpture 360</h3>
                 <p className="text-gray-700">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aliquam alias quisquam asperiores amet ipsa molestias repellendus nesciunt, impedit minima quis quam dolor, fuga iure libero tempora architecto quia voluptatibus?
                 </p>
@@ -197,7 +212,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-[#3B5998] mb-4">Mammoplasty</h3>
+                <h3 className="text-2xl font-bold text-[#507775] mb-4">Mammoplasty</h3>
                 <p className="text-gray-700">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ratione sequi perferendis voluptas commodi doloremque, ipsa reiciendis assumenda voluptates temporibus maxime ullam eveniet illum suscipit dolore, quaerat veniam animi consequuntur.
                 </p>
@@ -215,7 +230,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-[#3B5998] mb-4">Rinoplasty</h3>
+                <h3 className="text-2xl font-bold text-[#507775] mb-4">Rinoplasty</h3>
                 <p className="text-gray-700">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ratione sequi perferendis voluptas commodi doloremque, ipsa reiciendis assumenda voluptates temporibus maxime ullam eveniet illum suscipit dolore, quaerat veniam animi consequuntur.
                 </p>
@@ -233,7 +248,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-[#3B5998] mb-4">Gastric Sleeve</h3>
+                <h3 className="text-2xl font-bold text-[#507775] mb-4">Gastric Sleeve</h3>
                 <p className="text-gray-700">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ratione sequi perferendis voluptas commodi doloremque, ipsa reiciendis assumenda voluptates temporibus maxime ullam eveniet illum suscipit dolore, quaerat veniam animi consequuntur.
                 </p>
@@ -245,12 +260,68 @@ export default function Home() {
         </div>
       </section>
 
+
+      <section className="bg-white py-12 px-4">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-semibold text-[#77B5B2] text-center mb-12">Our Partner Doctors</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {doctors.map((doctor) => (
+            <div 
+              key={doctor.id}
+              className="bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden"
+            >
+              <div className="p-6">
+                <div className="flex justify-center mb-4">
+                  <div className="w-32 h-32 rounded-full bg-gray-100 flex items-center justify-center">
+                    <span className="text-4xl text-[#77B5B2] font-bold">
+                      {doctor.name.split(' ')[1].charAt(0)}
+                    </span>
+                  </div>
+                </div>
+                
+                <h3 className="text-xl font-semibold text-[#507775] text-center mb-1">
+                  {doctor.name}
+                </h3>
+                <p className="text-sm text-gray-500 text-center mb-4">
+                  {doctor.specialty}
+                </p>
+                
+                <div className="text-center">
+                  <Link 
+                    href={`/doctors/${doctor.id}`}
+                    className="inline-flex items-center text-sm font-medium text-[#77B5B2] hover:text-[#5a9c99] transition-colors"
+                  >
+                    View Profile
+                    <svg 
+                      className="w-4 h-4 ml-1" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24" 
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth={2} 
+                        d="M14 5l7 7m0 0l-7 7m7-7H3" 
+                      />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
       {/* Contact Section */}
       <section className="py-16 px-4 bg-white" id="contact">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#3B5998] mb-8">Contact Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#507775] mb-8">Contact Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-[#4A90E2] rounded-lg p-8 text-white">
+            <div className="bg-[#77B5B2] rounded-lg p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
               <p className="mb-4">We&apos;d love to hear from you! Reach out to us for any inquiries or to schedule an appointment.</p>
               <div className="space-y-4">
@@ -269,12 +340,12 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-gray-100 rounded-lg p-8">
-              <h3 className="text-2xl font-bold text-[#3B5998] mb-4">Send Us a Message</h3>
+              <h3 className="text-2xl font-bold text-[#507775] mb-4">Send Us a Message</h3>
               <form className="space-y-4">
                 <input type="text" placeholder="Your Name" className="w-full p-2 border rounded" />
                 <input type="email" placeholder="Your Email" className="w-full p-2 border rounded" />
                 <textarea placeholder="Your Message" className="w-full p-2 border rounded" rows={4} />
-                <Button type="submit" className="bg-[#F5A623] hover:bg-[#E09612] text-white px-8 py-2 rounded">
+                <Button type="submit" className="bg-[#77B5B2] hover:bg-[#507775] text-white px-8 py-2 rounded">
                   Send Message
                 </Button>
               </form>
@@ -286,7 +357,7 @@ export default function Home() {
       {/* Location Section */}
       <section className="py-16 px-4 bg-[#3B5998]/10">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#3B5998] mb-8">Our Location</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#507775] mb-8">Our Location</h2>
           <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.888244552345!2d-99.169485684526!3d19.42702074608145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sMexico%20City%2C%20CDMX%2C%20Mexico!5e0!3m2!1sen!2sus!4v1633031670013!5m2!1sen!2sus"
@@ -303,7 +374,7 @@ export default function Home() {
        {/* Reviews Section */}
        <section className="py-16 px-4 bg-white" id="reviews">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#3B5998] mb-8">What Our Clients Say</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#507775] mb-8">What Our Clients Say</h2>
           <div className="relative">
             <button
               onClick={() => scrollLeft('reviews-carousel')}
@@ -348,9 +419,9 @@ export default function Home() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 px-4 bg-[#4A90E2]">
+      <section className="py-16 px-4 bg-[#77B5B2]">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">Our Gallery</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">Before & After</h2>
         <div className="relative">
           <button
             onClick={() => scrollLeft("gallery-carousel")}
@@ -384,35 +455,12 @@ export default function Home() {
       </div>
     </section>
 
-    <Carousel/>
+     <Carousel/>
 
       {/* Footer */}
-      <footer className="bg-[#3B5998] py-8 px-4 text-white">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
-            <h3 className="text-xl font-bold">Serenity & Company</h3>
-            <p className="text-sm">MEXICANS SPECIALISTS</p>
-          </div>
-          <nav className="flex flex-wrap justify-center gap-4">
-            <Link href="#" className="text-sm">
-              Home
-            </Link>
-            <Link href="#" className="text-sm">
-              About
-            </Link>
-            <Link href="#" className="text-sm">
-              Services
-            </Link>
-            <Link href="#" className="text-sm">
-              Reviews
-            </Link>
-            <Link href="#" className="text-sm">
-              Contact
-            </Link>
-          </nav>
-          <p className="text-sm mt-4 md:mt-0">© 2025 Delta by Imagen Medica. All rights reserved.</p>
-        </div>
-      </footer>
+      <div>
+        <Footer/>
+      </div>
     </div>
   );
 }

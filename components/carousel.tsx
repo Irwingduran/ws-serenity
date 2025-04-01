@@ -27,10 +27,10 @@ const Carousel = () => {
   return (
     <div className="py-16">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-gray-800">Especialista en cirugía plástica</h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto mt-2">
-          Amplia experiencia en procedimientos avanzados. 
-          Reconocido por su precisión y excelencia en el trato a sus pacientes.
+        <h2 className="text-3xl font-bold text-[#507775]">Plastic surgery specialists</h2>
+        <p className="text-lg text-[#507775] max-w-2xl mx-auto mt-2">
+        Extensive experience in advanced procedures. 
+        Recognized for his precision and excellence in the treatment of his patients.
         </p>
       </div>
       <div className="relative w-full max-w-lg mx-auto"> {/* Cambiado de max-w-2xl a max-w-lg */}
@@ -43,13 +43,13 @@ const Carousel = () => {
         </div>
         <button
           onClick={prevSlide}
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 p-2 rounded-full text-white hover:bg-gray-700"
+          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-[#77B5B2] p-2 rounded-full text-white hover:bg-[#507775]"
         >
           <ChevronLeft size={24} />
         </button>
         <button
           onClick={nextSlide}
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 p-2 rounded-full text-white hover:bg-gray-700"
+          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-[#77B5B2] p-2 rounded-full text-white hover:bg-[#507775]"
         >
           <ChevronRight size={24} />
         </button>
@@ -59,7 +59,7 @@ const Carousel = () => {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-3 h-3 rounded-full ${
-                index === currentIndex ? "bg-gray-800" : "bg-gray-400"
+                index === currentIndex ? "bg-[#77B5B2]" : "bg-gray-400"
               }`}
             ></button>
           ))}
