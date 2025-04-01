@@ -1,12 +1,14 @@
+"use client"
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
+import Navbar from '../../../components/navbar';
+import Footer from '../../../components/footer';
 
 const doctor = {
     name: "DR. CORVALA",
     specialty: "Bariatric Surgery",
     facility: "Hospital Angeles",
-    location: "Tijuana, Mexico",
+    location: "Puebla, Mexico",
     languages: "English & Spanish",
     licenseSurgery: "0630551",
     licenseSpecialty: "3212449",
@@ -16,14 +18,17 @@ const doctor = {
 
 const Page = () => {
   return (
+    <>
+    <Navbar/>
 <div className="bg-white min-h-screen">
+    
       {/* Breadcrumb */}
       <div className="max-w-7xl mx-auto px-4 py-4">
         <nav className="flex" aria-label="Breadcrumb">
           <ol className="inline-flex items-center space-x-1 md:space-x-2">
             <li className="inline-flex items-center">
-              <Link href="/" className="inline-flex items-center text-sm font-medium text-[#77B5B2] hover:text-[#5a9c99]">
-                Home
+              <Link href="/#partners" className="inline-flex items-center text-sm font-medium text-[#77B5B2] hover:text-[#5a9c99]">
+                Doctor's
               </Link>
             </li>
             <li aria-current="page">
@@ -77,7 +82,7 @@ const Page = () => {
                 <p className="text-lg text-gray-800">{doctor.licenseSpecialty}</p>
               </div>
             </div>
-
+{/* 
             <div className="flex flex-wrap gap-4 mb-8">
               <button className="px-6 py-2 border border-[#77B5B2] text-[#77B5B2] rounded-lg hover:bg-[#77B5B2] hover:text-white transition-colors">
                 SEE CERTIFICATES
@@ -89,6 +94,8 @@ const Page = () => {
                 SEE DOCTOR'S BIO
               </button>
             </div>
+            */}
+
           </div>
         </div>
       </section>
@@ -143,6 +150,8 @@ const Page = () => {
         </div>
       </section>
     </div>
+      <Footer/>
+    </>
   );
 };
 

@@ -260,8 +260,8 @@ export default function Home() {
         </div>
       </section>
 
-
-      <section className="bg-white py-12 px-4">
+    {/* Partner Doctors */}
+      <section className="bg-white py-12 px-4" id="partners">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-semibold text-[#77B5B2] text-center mb-12">Our Partner Doctors</h2>
         
