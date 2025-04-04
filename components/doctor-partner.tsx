@@ -30,7 +30,7 @@ const doctors: Doctor[] = [
   },
   { 
     name: "Dr. Jesús Antonio Riaño", 
-    specialty: "Plastic Surgeon", 
+    specialty: "Plastic Surgery", 
     id: "doctor4",
     imageUrl: "/dr-jesus.jpg"
   }

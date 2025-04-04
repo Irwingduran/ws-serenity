@@ -8,9 +8,11 @@ import Navbar from "../components/navbar";
 import Carousel from "../components/carousel";
 import Footer from "../components/footer";
 import SocialMediaButtons from "../components/social-media";
-import GallerySection from "../components/gallery";
-import DoctorCard from "../components/doctor-partner";
+import Slides from "../components/slides";
 import PartnerDoctors from "../components/doctor-partner";
+import MedicalTourismSection from "../components/medical-tourism";
+import GallerySection from "../components/gallery";
+import WelcomeModal from "../components/modal";
 
 export default function Home() {
   const scrollLeft = (id: string) => {
@@ -49,6 +51,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <SocialMediaButtons/>
+      <WelcomeModal/>
       {/* Navigation */}
       <Navbar/>
 
@@ -119,7 +122,7 @@ export default function Home() {
       </section>
 
      <section>
-      <GallerySection/>
+      <Slides/>
      </section>
 
       {/* Stats Section */}
@@ -261,6 +264,16 @@ export default function Home() {
       <PartnerDoctors/>
     </section>
 
+     {/* Medical Tour */}
+     <section className="bg-white py-12 px-4" id="partners">
+      <MedicalTourismSection/>
+    </section>
+
+     {/* Gallery Section */}
+    <section >
+     <GallerySection/>
+    </section>
+
       {/* Contact Section */}
       <section className="py-16 px-4 bg-white" id="contact">
         <div className="max-w-5xl mx-auto">
@@ -362,43 +375,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Gallery Section */}
-      <section className="py-16 px-4 bg-[#77B5B2]">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">Before & After</h2>
-        <div className="relative">
-          <button
-            onClick={() => scrollLeft("gallery-carousel")}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-500 p-2 rounded-full shadow-md z-10"
-          >
-            &#10094;
-          </button>
-          <button
-            onClick={() => scrollRight("gallery-carousel")}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-500 p-2 rounded-full shadow-md z-10"
-          >
-            &#10095;
-          </button>
-          <div
-            id="gallery-carousel"
-            className="flex overflow-x-auto space-x-4 scrollbar-hide"
-          >
-            {images.map((image, index) => (
-              <div key={index} className="flex-shrink-0 w-64 h-64 bg-gray-200 rounded-lg overflow-hidden">
-                <Image
-                  src={image}
-                  alt={`Gallery Image ${index + 1}`}
-                  width={256}
-                  height={256}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
 
      <Carousel/>
 

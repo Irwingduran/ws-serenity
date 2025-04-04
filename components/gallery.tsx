@@ -1,130 +1,93 @@
-"use client"
+import { useState } from 'react';
+import Image from 'next/image';
 
-import { useState } from "react"
-import { Dialog, DialogContent } from "./ui/dialog"
-import { Button } from "./ui/button"
-import { ChevronLeft, ChevronRight, X } from "lucide-react"
-import useEmblaCarousel from "embla-carousel-react"
-import Autoplay from "embla-carousel-autoplay"
+type GalleryImage = {
+  src: string;
+  category: string;
+  alt: string;
+};
 
-const galleryItems = [
-  {
-    id: 2,
-    type: "facility",
-    title: "",
-    description: "",
-    image: "/location/room1.jpg",
-  },
-  {
-    id: 4,
-    type: "facility",
-    title: "",
-    description: "",
-    image: "/location/room2.jpg",
-  },
-  {
-    id: 3,
-    type: "facility",
-    title: "",
-    description: "",
-    image: "/location/room1.jpg",
-  },
-  {
-    id: 5,
-    type: "facility",
-    title: "",
-    description: "",
-    image: "/location/room2.jpg",
-  },
-]
+const GallerySection = () => {
+  const [activeCategory, setActiveCategory] = useState<string>('all');
+  
+  const galleryImages: GalleryImage[] = [
+    { src: "/gallery/img2.jpeg", category: "Biatric", alt: "before and after" },
+    { src: "/gallery/img3.jpeg", category: "Biatric", alt: " transformation" },
+    { src: "/gallery/img4.jpeg", category: "Biatric", alt: " surgery results" },
+    { src: "/gallery/cosmetic-2.jpeg", category: "Surgery", alt: "Facial " },
+    { src: "/gallery/orthopedic-1.jpeg", category: "Surgery", alt: " replacement recovery" },
+    { src: "/gallery/orthopedic-2.jpeg", category: "Surgery", alt: " injury " },
+    { src: "/gallery/recovery-1.jpeg", category: "Surgery", alt: " in  " },
+    { src: "/gallery/recovery-2.jpeg", category: "Surgery", alt: " therapy " },
+    // Add more images with appropriate categories
+  ];
 
-export default function GallerySection() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()])
-  const [selectedImage, setSelectedImage] = useState<number | null>(null)
+  const categories = [
+    { id: 'all', name: 'All Procedures' },
+    { id: 'Rino', name: 'Rino' },
+    { id: 'Biatric', name: 'Biatric' },
+    { id: 'Prostate', name: 'Prostate' },
+    { id: 'Facial Surgery', name: 'Facial Surgery' },
+  ];
 
-  const scrollPrev = () => emblaApi && emblaApi.scrollPrev()
-  const scrollNext = () => emblaApi && emblaApi.scrollNext()
+  const filteredImages = activeCategory === 'all' 
+    ? galleryImages 
+    : galleryImages.filter(img => img.category === activeCategory);
 
   return (
-    <section className="w-full bg-gray-50 py-16 lg:py-24">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          
-        </div>
-
-        <div className="relative max-w-6xl mx-auto">
-          <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex">
-              {galleryItems.map((item) => (
-                <div key={item.id} className="flex-[0_0_100%] min-w-0 md:flex-[0_0_50%] lg:flex-[0_0_33.333%] pl-4">
-                  <div className="relative group cursor-pointer" onClick={() => setSelectedImage(item.id)}>
-                    <div className="relative overflow-hidden rounded-lg">
-                      <img
-                        src={item.image || "/placeholder.svg"}
-                        alt={item.title}
-                        className="w-full h-64 object-cover transition-transform group-hover:scale-105"
-                      />
-                    </div>
-                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                      <div className="text-white text-center p-4">
-                        <h3 className="text-lg font-medium mb-2">{item.title}</h3>
-                        <p className="text-sm">{item.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Navigation Arrows */}
-          <Button
-            variant="outline"
-            size="icon"
-            className="absolute top-1/2 left-2 -translate-y-1/2 bg-white/80 hover:bg-white z-10"
-            onClick={scrollPrev}
-          >
-            <ChevronLeft className="h-4 w-4" />
-          </Button>
-          <Button
-            variant="outline"
-            size="icon"
-            className="absolute top-1/2 right-2 -translate-y-1/2 bg-white/80 hover:bg-white z-10"
-            onClick={scrollNext}
-          >
-            <ChevronRight className="h-4 w-4" />
-          </Button>
-        </div>
-
-        {/* Modal for full-size image view */}
-        <Dialog open={selectedImage !== null} onOpenChange={() => setSelectedImage(null)}>
-          <DialogContent className="max-w-4xl bg-black/95 border-none">
-            <Button
-              variant="ghost"
-              size="icon"
-              className="absolute right-4 top-4 text-white hover:bg-white/20"
-              onClick={() => setSelectedImage(null)}
+    <section className="py-16 px-4 bg-[#77B5B2]">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">Our Gallery</h2>
+        
+        {/* Category Filters */}
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {categories.map((category) => (
+            <button
+              key={category.id}
+              onClick={() => setActiveCategory(category.id)}
+              className={`px-6 py-2 rounded-full font-medium transition-colors ${
+                activeCategory === category.id
+                  ? 'bg-white text-[#507775]'
+                  : 'bg-[#507775] text-white hover:bg-[#3a5a58]'
+              }`}
             >
-              <X className="h-4 w-4" />
-            </Button>
-            {selectedImage && (
-              <div className="p-4">
-                <img
-                  src={galleryItems.find((item) => item.id === selectedImage)?.image || "/placeholder.svg"}
-                  alt={galleryItems.find((item) => item.id === selectedImage)?.title}
-                  className="w-full rounded-lg"
-                />
-                <div className="text-white text-center mt-4">
-                  <h3 className="text-xl font-medium mb-2">
-                    {galleryItems.find((item) => item.id === selectedImage)?.title}
-                  </h3>
-                  <p className="text-gray-300">{galleryItems.find((item) => item.id === selectedImage)?.description}</p>
-                </div>
+              {category.name}
+            </button>
+          ))}
+        </div>
+
+        {/* Gallery Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {filteredImages.map((image, index) => (
+            <div 
+              key={index}
+              className="relative aspect-square bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+            >
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
+                <span className="text-white font-medium capitalize">
+                  {image.category} procedure
+                </span>
               </div>
-            )}
-          </DialogContent>
-        </Dialog>
+            </div>
+          ))}
+        </div>
+
+        {/* Empty State */}
+        {filteredImages.length === 0 && (
+          <div className="text-center py-12 text-white">
+            <p className="text-xl">No images available for this category</p>
+          </div>
+        )}
       </div>
     </section>
-  )
-}
+  );
+};
+
+export default GallerySection;
