@@ -1,19 +1,19 @@
 "use client"
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navbar from '../../../components/navbar';
 import Footer from '../../../components/footer';
 
 const doctor = {
-    name: "DR. CORVALA",
-    specialty: "Bariatric Surgery",
-    facility: "Hospital Angeles",
+    name: "Dr. Irvin Hans Garduño",
+    specialty: "Rhinology & Facial Aesthetic Surgery",
+    facility: "Facial Clinic Surgery",
     location: "Puebla, Mexico",
     languages: "English & Spanish",
-    licenseSurgery: "0630551",
-    licenseSpecialty: "3212449",
-    bio: "El Dr. Corvala es un cirujano bariátrico certificado con más de 15 años de experiencia...",
-    procedures: ["Gastric Bypass", "Sleeve Gastrectomy", "Gastric Banding"]
+    licenseSpecialty: "10993813",
+    bio: "Dr. Garduño studied Surgery at the University of the Americas Puebla (UDLAP), graduated from the specialty in Otolaryngology and Head and Neck Surgery at the National Institute of Rehabilitation endorsed by the National Autonomous University of Mexico (UNAM), certified member of the Mexican Council of Otolaryngology and Head and Neck Surgery, as well as member of the most important societies of facial plastic surgery in the world. He is currently Professor of High Specialty Postgraduate in Rhinology and Facial Plastic Surgery.",
+    procedures: ["Rhinoplasty", "Bichectomy", "Blepharoplasty"]
   };
 
 const Page = () => {
@@ -36,7 +36,7 @@ const Page = () => {
                 <svg className="w-3 h-3 mx-1 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path>
                 </svg>
-                <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">Dr. Corvala</span>
+                <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">Dr. Garduño</span>
               </div>
             </li>
           </ol>
@@ -46,14 +46,18 @@ const Page = () => {
       {/* Doctor Header */}
       <section className="max-w-7xl mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row gap-8">
-          {/* Doctor Photo */}
-          <div className="w-full md:w-1/3 lg:w-1/4">
-            <div className="bg-gray-100 rounded-xl overflow-hidden aspect-square">
-              <div className="w-full h-full flex items-center justify-center text-9xl font-bold text-[#77B5B2]">
-                C
-              </div>
-            </div>
-          </div>
+         {/* Doctor Photo */}
+<div className="w-full md:w-1/3 lg:w-1/4">
+  <div className="bg-gray-100 rounded-xl overflow-hidden aspect-square">
+    <Image
+      src="/dr-irvin.png" // Replace with your actual image path
+      alt="Doctor profile photo"
+      width={300}
+      height={300}
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
 
           {/* Doctor Info */}
           <div className="w-full md:w-2/3 lg:w-3/4">
@@ -72,10 +76,6 @@ const Page = () => {
               <div>
                 <h3 className="text-sm font-semibold text-gray-500 mb-1">Languages</h3>
                 <p className="text-lg text-gray-800">{doctor.languages}</p>
-              </div>
-              <div>
-                <h3 className="text-sm font-semibold text-gray-500 mb-1">License (Surgery)</h3>
-                <p className="text-lg text-gray-800">{doctor.licenseSurgery}</p>
               </div>
               <div>
                 <h3 className="text-sm font-semibold text-gray-500 mb-1">Medical License (Specialty)</h3>
@@ -106,10 +106,10 @@ const Page = () => {
           <h2 className="text-2xl font-semibold text-[#507775] mb-4">{doctor.facility}</h2>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <p className="text-gray-600 max-w-2xl">
-              Hospital reconocido internacionalmente con acreditación Joint Commission International...
+            Facial Clinic Surgery recognized with accreditations and adapted to regulations...
             </p>
             <Link 
-              href="/appointment" 
+              href="/#" 
               className="px-6 py-3 bg-[#77B5B2] text-white rounded-lg hover:bg-[#5a9c99] transition-colors font-medium"
             >
               SCHEDULE APPOINTMENT →
@@ -138,14 +138,16 @@ const Page = () => {
 
           {/* Bio */}
           <div>
-            <h3 className="text-xl font-semibold text-[#507775] mb-4">About Dr. Corvala</h3>
+            <h3 className="text-xl font-semibold text-[#507775] mb-4">About Dr. Garduño</h3>
             <p className="text-gray-700 mb-4">{doctor.bio}</p>
+            {/* Bio 
             <Link href="#" className="text-[#77B5B2] hover:text-[#5a9c99] font-medium inline-flex items-center">
               Learn more
               <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </Link>
+            */}
           </div>
         </div>
       </section>

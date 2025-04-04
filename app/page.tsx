@@ -9,6 +9,8 @@ import Carousel from "../components/carousel";
 import Footer from "../components/footer";
 import SocialMediaButtons from "../components/social-media";
 import GallerySection from "../components/gallery";
+import DoctorCard from "../components/doctor-partner";
+import PartnerDoctors from "../components/doctor-partner";
 
 export default function Home() {
   const scrollLeft = (id: string) => {
@@ -43,12 +45,6 @@ export default function Home() {
     "/gallery/img15.jpeg",
   ];
 
-  const doctors = [
-    { name: "Dr. ", specialty: "specialty hre", id: "doctor1" },
-    { name: "Dr. ", specialty: "specialty here", id: "doctor1" },
-    { name: "Dr. ", specialty: "specialty here", id: "doctor1" },
-    { name: "Dr. ", specialty: "specialty here", id: "doctor1" }
-  ];
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -260,60 +256,9 @@ export default function Home() {
         </div>
       </section>
 
-    {/* Partner Doctors */}
-      <section className="bg-white py-12 px-4" id="partners">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-semibold text-[#77B5B2] text-center mb-12">Our Partner Doctors</h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {doctors.map((doctor) => (
-            <div 
-              key={doctor.id}
-              className="bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden"
-            >
-              <div className="p-6">
-                <div className="flex justify-center mb-4">
-                  <div className="w-32 h-32 rounded-full bg-gray-100 flex items-center justify-center">
-                    <span className="text-4xl text-[#77B5B2] font-bold">
-                      {doctor.name.split(' ')[1].charAt(0)}
-                    </span>
-                  </div>
-                </div>
-                
-                <h3 className="text-xl font-semibold text-[#507775] text-center mb-1">
-                  {doctor.name}
-                </h3>
-                <p className="text-sm text-gray-500 text-center mb-4">
-                  {doctor.specialty}
-                </p>
-                
-                <div className="text-center">
-                  <Link 
-                    href={`/doctors/${doctor.id}`}
-                    className="inline-flex items-center text-sm font-medium text-[#77B5B2] hover:text-[#5a9c99] transition-colors"
-                  >
-                    View Profile
-                    <svg 
-                      className="w-4 h-4 ml-1" 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24" 
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path 
-                        strokeLinecap="round" 
-                        strokeLinejoin="round" 
-                        strokeWidth={2} 
-                        d="M14 5l7 7m0 0l-7 7m7-7H3" 
-                      />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+     {/* Partner Doctors */}
+     <section className="bg-white py-12 px-4" id="partners">
+      <PartnerDoctors/>
     </section>
 
       {/* Contact Section */}
