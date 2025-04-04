@@ -137,13 +137,13 @@ const attractions = [
     id: 1,
     title: "Puebla Cathedral",
     description: "The Cathedral Basilica of Puebla, dedicated to Our Lady of the Immaculate Conception, is the episcopal seat of the archdiocese of Puebla. It was the first sumptuous temple built in America with good designs, consecrated in 1649. Founded by Philip II of Spain, it's a centerpiece of Puebla's UNESCO World Heritage historic center.",
-    image: "/Puebla/catedral.webp"
+    image: "/puebla/catedral.webp"
   },
   {
     id: 2,
     title: "Forts of Loreto and Guadalupe",
     description: "These 19th century military fortifications were originally chapels built on the Acueyametepec hill. They became famous as the scene of the Battle of Puebla during the French Intervention in Mexico. Now housing site museums, they offer panoramic views of the city.",
-    image: "/Puebla/fuertes.webp"
+    image: "/puebla/fuertes.webp"
   },
   {
     id: 3,
@@ -152,25 +152,25 @@ const attractions = [
     location: "Boulevard Atlixcáyotl 2501, Reserva Territorial Atlixcáyotl",
     hours: "Tuesday to Sunday, 10:00 to 19:00",
     admission: "$100 General / $50 Puebla residents / Free on Sundays",
-    image: "/Puebla/baroco.jpg"
+    image: "/puebla/baroco.jpg"
   },
   {
     id: 4,
     title: "Santa Monica Ex-Convent",
     description: "This former Augustinian convent, converted to a Religious Art Museum in 1935, showcases Mexico's richest collection of colonial-era religious art. The museum preserves the atmosphere of Puebla's conventual life with works by famous artists like Miguel Cabrera.",
-    image: "/Puebla/convento.jpeg"
+    image: "/puebla/convento.jpeg"
   },
   {
     id: 5,
     title: "Great Pyramid of Cholula",
     description: "Considered the largest pyramid in the world by volume, this ancient temple was built in layers over centuries. Visitors can explore its tunnels to see preserved murals and appreciate how each civilization built over the previous structure.",
     admission: "$80",
-    image: "/Puebla/piramode.jpeg"
+    image: "/puebla/piramode.jpeg"
   },
   {
     id: 6,
     title: "Barrio de los Sapos",
     description: "This colorful neighborhood in Puebla's historic center is famous for its antique shops, art galleries, and traditional 'pasita' liqueur. The perfect place to find unique souvenirs while enjoying colonial architecture.",
-    image: "/Puebla/b-sapos.webp"
+    image: "/puebla/b-sapos.webp"
   }
 ];
