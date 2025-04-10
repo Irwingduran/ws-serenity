@@ -3,21 +3,28 @@ import Image from 'next/image';
 
 const WelcomeModal = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  // Open modal on component mount
+  
+  // Open modal on component mount only if not shown before in this session
   useEffect(() => {
-    setIsOpen(true);
+    // Check if modal has been shown in this session
+    const hasModalBeenShown = sessionStorage.getItem('welcomeModalShown');
+    
+    if (!hasModalBeenShown) {
+      setIsOpen(true);
+      // Mark modal as shown for this session
+      sessionStorage.setItem('welcomeModalShown', 'true');
+    }
   }, []);
-
+  
   // Close modal when clicking outside image
-  const handleClose = (e: React.MouseEvent) => {
+  const handleClose = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     if (e.target === e.currentTarget) {
       setIsOpen(false);
     }
   };
-
+  
   if (!isOpen) return null;
-
+  
   return (
     <div 
       className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
@@ -46,7 +53,6 @@ const WelcomeModal = () => {
             All Routes to Puebla
           </div>
         </div>
-
       </div>
     </div>
   );
