@@ -11,14 +11,14 @@ const GallerySection = () => {
   const [activeCategory, setActiveCategory] = useState<string>('all');
   
   const galleryImages: GalleryImage[] = [
-    { src: "/gallery/img2.jpeg", category: "Biatric", alt: "before and after" },
+    { src: "/gallery/img8.jpeg", category: "Biatric", alt: "before and after" },
     { src: "/gallery/img3.jpeg", category: "Biatric", alt: " transformation" },
     { src: "/gallery/img4.jpeg", category: "Biatric", alt: " surgery results" },
-    { src: "/gallery/cosmetic-2.jpeg", category: "Surgery", alt: "Facial " },
-    { src: "/gallery/orthopedic-1.jpeg", category: "Surgery", alt: " replacement recovery" },
-    { src: "/gallery/orthopedic-2.jpeg", category: "Surgery", alt: " injury " },
-    { src: "/gallery/recovery-1.jpeg", category: "Surgery", alt: " in  " },
-    { src: "/gallery/recovery-2.jpeg", category: "Surgery", alt: " therapy " },
+    { src: "/gallery/rino.jpg", category: "Rino", alt: "Facial " },
+    { src: "/gallery/rino2.jpg", category: "Rino", alt: " replacement recovery" },
+    { src: "/gallery/rino4.jpg", category: "Rino", alt: " injury " },
+    { src: "/gallery/rino5.jpg", category: "Rino", alt: " replacement recovery" },
+    { src: "/gallery/rino6.jpg", category: "Rino", alt: " injury " },
     // Add more images with appropriate categories
   ];
 
@@ -26,8 +26,8 @@ const GallerySection = () => {
     { id: 'all', name: 'All Procedures' },
     { id: 'Rino', name: 'Rino' },
     { id: 'Biatric', name: 'Biatric' },
-    { id: 'Prostate', name: 'Prostate' },
-    { id: 'Facial Surgery', name: 'Facial Surgery' },
+   // { id: 'Prostate', name: 'Prostate' },
+ //   { id: 'Facial Surgery', name: 'Facial Surgery' },
   ];
 
   const filteredImages = activeCategory === 'all' 
