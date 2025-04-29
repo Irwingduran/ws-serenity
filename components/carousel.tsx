@@ -60,7 +60,7 @@ const Carousel = () => {
               onClick={() => setCurrentIndex(index)}
               className={`w-3 h-3 rounded-full ${
                 index === currentIndex ? "bg-[#77B5B2]" : "bg-gray-400"
-              }`}
+              }`} 
             ></button>
           ))}
         </div>
