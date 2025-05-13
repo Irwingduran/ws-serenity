@@ -17,10 +17,10 @@ const doctors: Doctor[] = [
     imageUrl: "/dr-irvin.png" 
   },
   { 
-    name: "Dr. Edgar Serrano", 
+    name: "Dr. Ricardo Blas", 
     specialty: "Bariatric Surgery", 
     id: "doctor2",
-    imageUrl: "/dr-ed.png"
+    imageUrl: "/blass.avif"
   },
   { 
     name: "Dr. Bruno Rubí", 

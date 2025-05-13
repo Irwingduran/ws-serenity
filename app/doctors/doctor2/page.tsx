@@ -6,14 +6,14 @@ import Navbar from '../../../components/navbar';
 import Footer from '../../../components/footer';
 
 const doctor = {
-    name: "Dr. Edgar Serrano García",
+    name: "Dr. Ricardo Blas Azotla ",
     specialty: "Bariatric Surgery",
-    facility: "Ciplastic Hospital",
-    location: "Tijuana, Mexico",
+    facility: "Hospital Angeles Mocel",
+    location: "México City",
     languages: "English & Spanish",
-    licenseSpecialty: "11665362",
-    bio: "Dr. Edgar Serrano Garcia is a surgeon certified by the Mexican Board of General Surgery, with specialization in Bariatric and Metabolic Surgery by the National Autonomous University of Mexico (UNAM). A graduate of the Autonomous University of Yucatan, he has stood out for his commitment to medical excellence and the well-being of his patients. With a solid professional career, he is recognized for his surgical skill and dedication to continuous improvement in the field of surgery.",
-    procedures: ["Gastric Balloon", "Gastric Bypass", "Gastric Sleeve"]
+    licenseSpecialty: "AECEM 19675",
+    bio: "Dr. Ricardo Blas Azotla graduated as a Surgeon from the National Autonomous University of Mexico (UNAM). Subsequently, he studied the Specialty in General Surgery at the National Autonomous University of Mexico (UNAM) and studied the High Specialty in Bariatric Surgery at the National Medical Center November 20 (ISSSTE) with university endorsement by the UNAM. Current certification by the Mexican Council of General Surgery (CMCG) and the Mexican College of Surgery for Obesity and Metabolic Diseases (CMCOEM). Dr. Ricardo Blas Azotla is a surgeon certified by the Mexican Board of General Surgery, with specialization in Bariatric and Metabolic Surgery by the National Autonomous University of Mexico (UNAM). A graduate of the Autonomous University of Yucatan, he has stood out for his commitment to medical excellence and the well-being of his patients. With a solid professional career, he is recognized for his surgical skill and dedication to continuous improvement in the field of surgery.",
+    procedures: ["Gastric Balloon", "Gastric Bypass", "Gastric Sleeve", "Gastric Banding"]
   };
 
 const Page = () => {
@@ -36,7 +36,7 @@ const Page = () => {
                 <svg className="w-3 h-3 mx-1 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path>
                 </svg>
-                <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">Dr. Serrano</span>
+                <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">Dr. Blass</span>
               </div>
             </li>
           </ol>
@@ -50,7 +50,7 @@ const Page = () => {
 <div className="w-full md:w-1/3 lg:w-1/4">
   <div className="bg-gray-100 rounded-xl overflow-hidden aspect-square">
     <Image
-      src="/dr-ed.png" // Replace with your actual image path
+      src="/blass.avif" // Replace with your actual image path
       alt="Doctor profile photo"
       width={300}
       height={300}
@@ -106,13 +106,13 @@ const Page = () => {
           <h2 className="text-2xl font-semibold text-[#507775] mb-4">{doctor.facility}</h2>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <p className="text-gray-600 max-w-2xl">
-            Ciplastic Hospital recognized with accreditations and adapted to regulations...
+            Hospital Angeles Mocel recognized with accreditations and adapted to regulations...
             </p>
             <Link 
-              href="/#" 
+              href="https://www.findoctor.com.mx/doctores/ricardo-blas-azotla" target='_blank'
               className="px-6 py-3 bg-[#77B5B2] text-white rounded-lg hover:bg-[#5a9c99] transition-colors font-medium"
             >
-              SCHEDULE APPOINTMENT →
+              Findoctor Profile →
             </Link>
           </div>
         </div>

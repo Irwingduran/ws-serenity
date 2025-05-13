@@ -57,14 +57,14 @@ export default function Home() {
 
       {/* Hero Section */}
       <section
-        className="relative bg-[#77B5B2]/40 bg-blend-overlay"
+        className="relative bg-[#F5F7FA]/80 bg-blend-overlay"
         style={{
-          backgroundImage: "url('/IMG_0019.jpg')",
+          backgroundImage: "url('/img-bg.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="max-w-7xl mx-auto px-4 py-20 md:py-32 text-center text-white">
+        <div className="max-w-7xl mx-auto px-4 py-20 md:py-32 text-center text-[#507775]">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Serenity Surgery Planner</h1>
           <h2 className="text-2xl md:text-4xl font-semibold mb-4">Specialists in Puebla, Mexico</h2>
 
