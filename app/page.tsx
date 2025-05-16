@@ -359,12 +359,7 @@ export default function Home() {
 
 
 
-      {/* Step by Step Guide Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <StepByStepGuide />
-        </div>
-      </section>
+     
 
   
 
@@ -379,44 +374,6 @@ export default function Home() {
     <section >
      <GallerySection/>
     </section>
-
-      {/* Contact Section */}
-      <section className="py-16 px-4 bg-white" id="contact">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#507775] mb-8">Contact Us</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-[#77B5B2] rounded-lg p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
-              <p className="mb-4">We&apos;d love to hear from you! Reach out to us for any inquiries or to schedule an appointment.</p>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <MapPin className="w-6 h-6 mr-2" />
-                  <p>123 Serenity St, Mexico City, Mexico</p>
-                </div>
-                <div className="flex items-center">
-                  <Mail className="w-6 h-6 mr-2" />
-                  <p>info@serenitycompany.com</p>
-                </div>
-                <div className="flex items-center">
-                  <Phone className="w-6 h-6 mr-2" />
-                  <p>+52 55 1234 5678</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-gray-100 rounded-lg p-8">
-              <h3 className="text-2xl font-bold text-[#507775] mb-4">Send Us a Message</h3>
-              <form className="space-y-4">
-                <input type="text" placeholder="Your Name" className="w-full p-2 border rounded" />
-                <input type="email" placeholder="Your Email" className="w-full p-2 border rounded" />
-                <textarea placeholder="Your Message" className="w-full p-2 border rounded" rows={4} />
-                <Button type="submit" className="bg-[#77B5B2] hover:bg-[#507775] text-white px-8 py-2 rounded">
-                  Send Message
-                </Button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Location Section */}
       <section className="py-16 px-4 bg-[#3B5998]/10">
@@ -483,6 +440,51 @@ export default function Home() {
       </section>
 
      <Carousel/>
+
+      {/* Step by Step Guide Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <StepByStepGuide />
+        </div>
+      </section>
+
+        {/* Contact Section */}
+        <section className="py-16 px-4 bg-white" id="contact">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#507775] mb-8">Contact Us</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-[#77B5B2] rounded-lg p-8 text-white">
+              <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
+              <p className="mb-4">We&apos;d love to hear from you! Reach out to us for any inquiries or to schedule an appointment.</p>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <MapPin className="w-6 h-6 mr-2" />
+                  <p>123 Serenity St, Mexico City, Mexico</p>
+                </div>
+                <div className="flex items-center">
+                  <Mail className="w-6 h-6 mr-2" />
+                  <p>info@serenitycompany.com</p>
+                </div>
+                <div className="flex items-center">
+                  <Phone className="w-6 h-6 mr-2" />
+                  <p>+52 55 1234 5678</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-gray-100 rounded-lg p-8">
+              <h3 className="text-2xl font-bold text-[#507775] mb-4">Send Us a Message</h3>
+              <form className="space-y-4">
+                <input type="text" placeholder="Your Name" className="w-full p-2 border rounded" />
+                <input type="email" placeholder="Your Email" className="w-full p-2 border rounded" />
+                <textarea placeholder="Your Message" className="w-full p-2 border rounded" rows={4} />
+                <Button type="submit" className="bg-[#77B5B2] hover:bg-[#507775] text-white px-8 py-2 rounded">
+                  Send Message
+                </Button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <div>

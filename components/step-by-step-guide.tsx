@@ -139,9 +139,9 @@ const StepByStepGuide = () => {
 
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+          <h2 className="text-3xl font-bold text-center py-10 text-[#507775]">Step-by-Step Guide for Your Surgery in Puebla</h2>
       <div className="bg-[#77B5B2] p-6 text-white">
-        <h2 className="text-2xl font-bold">Step-by-Step Guide for Your Surgery in Puebla</h2>
-        <p className="mt-2 opacity-90">Complete process guide for your surgery</p>
+        <h2 className="text-2xl font-bold">Complete process guide for your surgery</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
