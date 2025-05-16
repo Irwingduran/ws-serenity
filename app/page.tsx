@@ -14,6 +14,7 @@ import MedicalTourismSection from "../components/medical-tourism";
 import GallerySection from "../components/gallery";
 import WelcomeModal from "../components/modal";
 import PricingTable from "../components/pricing-table"
+import StepByStepGuide from "../components/step-by-step-guide"
 
 export default function Home() {
   const scrollLeft = (id: string) => {
@@ -354,6 +355,20 @@ export default function Home() {
     </section>
   </div>
      </section>
+
+
+
+
+      {/* Step by Step Guide Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <StepByStepGuide />
+        </div>
+      </section>
+
+  
+
+
 
      {/* Medical Tour */}
      <section className="bg-white py-12 px-4" id="partners">
