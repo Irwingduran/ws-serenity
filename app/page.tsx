@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Play, DollarSign, Calendar, Building2, MessageCircle, MapPin, Mail, Phone } from "lucide-react";
+import { Play, DollarSign, Calendar, Building2, MessageCircle, MapPin, Mail, Phone, CheckCircle } from "lucide-react";
 import { Button } from "../components/ui/button";
 import Navbar from "../components/navbar";
 import Carousel from "../components/carousel";
@@ -13,6 +13,7 @@ import PartnerDoctors from "../components/doctor-partner";
 import MedicalTourismSection from "../components/medical-tourism";
 import GallerySection from "../components/gallery";
 import WelcomeModal from "../components/modal";
+import PricingTable from "../components/pricing-table"
 
 export default function Home() {
   const scrollLeft = (id: string) => {
@@ -172,97 +173,187 @@ export default function Home() {
 
       {/* Service Section */}
       <section className="py-16 px-4 bg-[#77B5B2]" id="services">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-6">Our Services</h2>
+      <div className="max-w-5xl mx-auto">
+    <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-6">Our Services</h2>
 
-          <p className="text-white text-center text-lg mb-12">
-            We offer the following bariatric weight loss procedures in addition to various weight loss revision
-            surgeries.
-          </p>
+    <p className="text-white text-center text-lg mb-12">
+      We offer the following bariatric weight loss procedures in addition to various weight loss revision
+      surgeries and body contouring procedures.
+    </p>
 
-          <div className="space-y-10">
-            <a href="/service1">
-            <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
-              <div className="flex-shrink-0 flex items-center justify-center">
-                <Image
-                  src="/service/img4.jpg"
-                  alt="Gastric Sleeve Illustration"
-                  width={200}
-                  height={200}
-                  className="w-40 h-40"
-                />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-[#507775] mb-4">Liposculpture 360</h3>
-                <p className="text-gray-700">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aliquam alias quisquam asperiores amet ipsa molestias repellendus nesciunt, impedit minima quis quam dolor, fuga iure libero tempora architecto quia voluptatibus?
-                </p>
-              </div>
-            </div></a>
-            <a href="/service2">
-            <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
-              <div className="flex-shrink-0 flex items-center justify-center">
-                <Image
-                  src="/service/img3.jpg"
-                  alt="Gastric Bypass Illustration"
-                  width={200}
-                  height={200}
-                  className="w-40 h-40"
-                />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-[#507775] mb-4">Mammoplasty</h3>
-                <p className="text-gray-700">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ratione sequi perferendis voluptas commodi doloremque, ipsa reiciendis assumenda voluptates temporibus maxime ullam eveniet illum suscipit dolore, quaerat veniam animi consequuntur.
-                </p>
-              </div>
-            </div></a>
-            <a href="/service3">
-            <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
-              <div className="flex-shrink-0 flex items-center justify-center">
-                <Image
-                  src="/service/img2.jpg"
-                  alt="Gastric Bypass Illustration"
-                  width={200}
-                  height={200}
-                  className="w-40 h-40"
-                />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-[#507775] mb-4">Rinoplasty</h3>
-                <p className="text-gray-700">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ratione sequi perferendis voluptas commodi doloremque, ipsa reiciendis assumenda voluptates temporibus maxime ullam eveniet illum suscipit dolore, quaerat veniam animi consequuntur.
-                </p>
-              </div>
-            </div></a>
-            <a href="/service4">
-            <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
-              <div className="flex-shrink-0 flex items-center justify-center">
-                <Image
-                  src="/service/img1.jpg"
-                  alt="Gastric Bypass Illustration"
-                  width={200}
-                  height={200}
-                  className="w-40 h-40"
-                />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-[#507775] mb-4">Gastric Sleeve</h3>
-                <p className="text-gray-700">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ratione sequi perferendis voluptas commodi doloremque, ipsa reiciendis assumenda voluptates temporibus maxime ullam eveniet illum suscipit dolore, quaerat veniam animi consequuntur.
-                </p>
-              </div>
-            </div></a>
-
-            
+    <div className="space-y-10">
+      <a href="/service1">
+        <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
+          <div className="flex-shrink-0 flex items-center justify-center">
+            <Image
+              src="/service/img4.jpg"
+              alt="Gastric Sleeve Illustration"
+              width={200}
+              height={200}
+              className="w-40 h-40"
+            />
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold text-[#507775] mb-4">Liposculpture 360</h3>
+            <p className="text-gray-700">
+              A comprehensive body contouring procedure that targets fat deposits around the entire midsection, helping patients achieve a more sculpted and balanced figure.
+            </p>
           </div>
         </div>
+      </a>
+      
+      <a href="/service2">
+        <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
+          <div className="flex-shrink-0 flex items-center justify-center">
+            <Image
+              src="/service/img3.jpg"
+              alt="Gastric Bypass Illustration"
+              width={200}
+              height={200}
+              className="w-40 h-40"
+            />
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold text-[#507775] mb-4">Mammoplasty</h3>
+            <p className="text-gray-700">
+              Surgical procedures to enhance, reduce, or reconstruct the breasts, tailored to the patient's aesthetic goals or medical needs.
+            </p>
+          </div>
+        </div>
+      </a>
+      
+      <a href="/service3">
+        <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
+          <div className="flex-shrink-0 flex items-center justify-center">
+            <Image
+              src="/service/img2.jpg"
+              alt="Gastric Bypass Illustration"
+              width={200}
+              height={200}
+              className="w-40 h-40"
+            />
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold text-[#507775] mb-4">Head & Neck Surgery</h3>
+            <p className="text-gray-700">
+              Specialized surgeries addressing both functional and cosmetic concerns of the head and neck, including rhinoplasty and facial contouring.
+            </p>
+          </div>
+        </div>
+      </a>
+      
+      <a href="/service4">
+        <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
+          <div className="flex-shrink-0 flex items-center justify-center">
+            <Image
+              src="/service/img1.jpg"
+              alt="Gastric Bypass Illustration"
+              width={200}
+              height={200}
+              className="w-40 h-40"
+            />
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold text-[#507775] mb-4">Bariatric Surgery</h3>
+            <p className="text-gray-700">
+              Weight loss procedures designed to help individuals manage obesity and improve overall health through surgical intervention.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      {/* Additional Services Section */}
+      <div className="text-center">
+        <h3 className="text-2xl font-bold text-white mb-6">Other Specialized Procedures</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="bg-white rounded-lg p-6">
+            <h4 className="text-xl font-semibold text-[#507775] mb-2">Pubis Lift</h4>
+          </div>
+          <div className="bg-white rounded-lg p-6">
+            <h4 className="text-xl font-semibold text-[#507775] mb-2">Arm Lift (Brachioplasty)</h4>
+          </div>
+          <div className="bg-white rounded-lg p-6">
+            <h4 className="text-xl font-semibold text-[#507775] mb-2">Thigh Lift (Cruroplasty)</h4>
+          </div>
+          <div className="bg-white rounded-lg p-6">
+            <h4 className="text-xl font-semibold text-[#507775] mb-2">Back Lift (Dorsoplasty)</h4>
+          </div>
+          <div className="bg-white rounded-lg p-6">
+            <h4 className="text-xl font-semibold text-[#507775] mb-2">Torsoplasty</h4>
+          </div>
+          <div className="bg-white rounded-lg p-6">
+            <h4 className="text-xl font-semibold text-[#507775] mb-2">Gluteoplasty</h4>
+          </div>
+          <div className="bg-white rounded-lg p-6">
+            <h4 className="text-xl font-semibold text-[#507775] mb-2">Buttock Implant Removal</h4>
+          </div>
+          <div className="bg-white rounded-lg p-6">
+            <h4 className="text-xl font-semibold text-[#507775] mb-2">Labiaplasty</h4>
+          </div>
+          <div className="bg-white rounded-lg p-6">
+            <h4 className="text-xl font-semibold text-[#507775] mb-2">Vaginoplasty</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
       </section>
 
      {/* Partner Doctors */}
      <section className="bg-white py-12 px-4" id="partners">
       <PartnerDoctors/>
     </section>
+
+     {/* Surgeries most popular */}
+     <section>
+    <div className="flex flex-col min-h-screen">
+    {/* Pricing Table Section */}
+    <section className="py-16 px-4 bg-gray-50">
+      <div className="max-w-7xl mx-auto">
+        <PricingTable />
+      </div>
+    </section>
+
+    {/* Benefits Section */}
+    <section className="py-16 px-4 bg-white">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold text-[#507775] text-center mb-12">Why Choose Us</h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-[#F5F7FA] p-8 rounded-lg shadow-md text-center">
+            <div className="w-16 h-16 bg-[#77B5B2] rounded-full flex items-center justify-center mx-auto mb-6">
+              <CheckCircle className="h-8 w-8 text-white" />
+            </div>
+            <h3 className="text-xl font-bold text-[#507775] mb-4">Certified Surgeons</h3>
+            <p className="text-gray-600">
+              Our team is composed of surgeons with national and international certifications and years of experience.
+            </p>
+          </div>
+
+          <div className="bg-[#F5F7FA] p-8 rounded-lg shadow-md text-center">
+            <div className="w-16 h-16 bg-[#77B5B2] rounded-full flex items-center justify-center mx-auto mb-6">
+              <CheckCircle className="h-8 w-8 text-white" />
+            </div>
+            <h3 className="text-xl font-bold text-[#507775] mb-4">State-of-the-Art Facilities</h3>
+            <p className="text-gray-600">
+              We have cutting-edge technology and follow the highest standards of safety and hygiene.
+            </p>
+          </div>
+
+          <div className="bg-[#F5F7FA] p-8 rounded-lg shadow-md text-center">
+            <div className="w-16 h-16 bg-[#77B5B2] rounded-full flex items-center justify-center mx-auto mb-6">
+              <CheckCircle className="h-8 w-8 text-white" />
+            </div>
+            <h3 className="text-xl font-bold text-[#507775] mb-4">Personalized Care</h3>
+            <p className="text-gray-600">
+              Each patient receives a personalized treatment plan and full follow-up before, during, and after the procedure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+     </section>
 
      {/* Medical Tour */}
      <section className="bg-white py-12 px-4" id="partners">
