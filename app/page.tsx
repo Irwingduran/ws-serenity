@@ -2,8 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react"
-import { Play, DollarSign, Calendar, Building2, MessageCircle, MapPin, Mail, Phone, CheckCircle } from "lucide-react";
+import { useState, useEffect } from "react"
+import { Play, DollarSign, Calendar, Building2, MessageCircle, MapPin, Mail, Phone, ArrowRight, Sparkles, Package } from "lucide-react";
 import { Button } from "../components/ui/button";
 import Navbar from "../components/navbar";
 import Carousel from "../components/carousel";
@@ -50,6 +50,37 @@ export default function Home() {
     "/gallery/img14.jpeg",
     "/gallery/img15.jpeg",
   ];
+
+  const [activeIndex, setActiveIndex] = useState(0)
+  const plans = [
+    {
+      name: "Liposuction",
+      description: "360° Body Contouring",
+      highlight: "Most Popular",
+    },
+    {
+      name: "Augmentation Mammoplasty",
+      description: "Breast Enhancement",
+      highlight: "",
+    },
+    {
+      name: "Head & Neck Surgery",
+      description: "Facial Procedures",
+      highlight: "",
+    },
+    {
+      name: "Bariatric",
+      description: "Weight Loss Surgery",
+      highlight: "Comprehensive Care",
+    },
+  ]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((current) => (current + 1) % plans.length)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [plans.length])
 
 
   return (
@@ -318,43 +349,92 @@ export default function Home() {
     </section>
 
     {/* Benefits Section */}
-    <section className="py-16 px-4 bg-white">
+    <section className="py-16 px-4 bg-gradient-to-r from-[#77B5B2]/20 to-[#507775]/10">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-[#507775] text-center mb-12">Why Choose Us</h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-[#F5F7FA] p-8 rounded-lg shadow-md text-center">
-            <div className="w-16 h-16 bg-[#77B5B2] rounded-full flex items-center justify-center mx-auto mb-6">
-              <CheckCircle className="h-8 w-8 text-white" />
+        <div className="flex flex-col md:flex-row items-center justify-between bg-white rounded-2xl shadow-xl overflow-hidden">
+          {/* Left Content */}
+          <div className="w-full md:w-1/2 p-8 md:p-12">
+            <div className="flex items-center mb-4">
+              <Package className="h-6 w-6 text-[#77B5B2] mr-2" />
+              <span className="text-sm font-semibold text-[#77B5B2] uppercase tracking-wider">All-Inclusive Plans</span>
             </div>
-            <h3 className="text-xl font-bold text-[#507775] mb-4">Certified Surgeons</h3>
-            <p className="text-gray-600">
-              Our team is composed of surgeons with national and international certifications and years of experience.
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              Comprehensive Surgical Packages for Your Transformation
+            </h2>
+            <p className="text-gray-600 mb-8">
+              Our carefully designed plans include everything you need: surgery, travel arrangements, accommodation,
+              transportation, and follow-up care.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/plans/home">
+                <Button className="bg-[#77B5B2] hover:bg-[#507775] text-white px-6 py-2">
+                  View All Plans
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+              <Link href="/#contact">
+                <Button variant="outline" className="border-[#77B5B2] text-[#507775] hover:bg-[#77B5B2]/10 px-6 py-2">
+                  Contact Us
+                </Button>
+              </Link>
+            </div>
           </div>
 
-          <div className="bg-[#F5F7FA] p-8 rounded-lg shadow-md text-center">
-            <div className="w-16 h-16 bg-[#77B5B2] rounded-full flex items-center justify-center mx-auto mb-6">
-              <CheckCircle className="h-8 w-8 text-white" />
+          {/* Right Content - Rotating Plans */}
+          <div className="w-full md:w-1/2 bg-[#507775] p-8 md:p-12 text-white relative overflow-hidden">
+            {/* Background Pattern */}
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute top-0 left-0 w-40 h-40 rounded-full bg-white transform -translate-x-1/2 -translate-y-1/2"></div>
+              <div className="absolute bottom-0 right-0 w-60 h-60 rounded-full bg-white transform translate-x-1/4 translate-y-1/4"></div>
             </div>
-            <h3 className="text-xl font-bold text-[#507775] mb-4">State-of-the-Art Facilities</h3>
-            <p className="text-gray-600">
-              We have cutting-edge technology and follow the highest standards of safety and hygiene.
-            </p>
-          </div>
 
-          <div className="bg-[#F5F7FA] p-8 rounded-lg shadow-md text-center">
-            <div className="w-16 h-16 bg-[#77B5B2] rounded-full flex items-center justify-center mx-auto mb-6">
-              <CheckCircle className="h-8 w-8 text-white" />
+            <div className="relative z-10">
+              <div className="flex items-center mb-6">
+                <Sparkles className="h-5 w-5 mr-2 text-[#77B5B2]" />
+                <span className="text-sm font-medium">Featured Plans</span>
+              </div>
+
+              <div className="h-48">
+                {plans.map((plan, index) => (
+                  <div
+                    key={index}
+                    className={`absolute transition-all duration-500 w-full ${
+                      index === activeIndex
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 translate-y-8 pointer-events-none"
+                    }`}
+                  >
+                    {plan.highlight && (
+                      <span className="inline-block bg-[#77B5B2] text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">
+                        {plan.highlight}
+                      </span>
+                    )}
+                    <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
+                    <p className="text-white/80 mb-3">{plan.description}</p>
+                   
+                  </div>
+                ))}
+              </div>
+
+              {/* Indicators */}
+              <div className="flex space-x-2 mt-8">
+                {plans.map((_, index) => (
+                  <button
+                    key={index}
+                    className={`w-2 h-2 rounded-full transition-all ${
+                      index === activeIndex ? "bg-white w-6" : "bg-white/50"
+                    }`}
+                    onClick={() => setActiveIndex(index)}
+                    aria-label={`View ${plans[index].name} plan`}
+                  ></button>
+                ))}
+              </div>
             </div>
-            <h3 className="text-xl font-bold text-[#507775] mb-4">Personalized Care</h3>
-            <p className="text-gray-600">
-              Each patient receives a personalized treatment plan and full follow-up before, during, and after the procedure.
-            </p>
           </div>
         </div>
       </div>
     </section>
+
   </div>
      </section>
 
