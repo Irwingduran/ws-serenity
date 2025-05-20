@@ -56,11 +56,14 @@ const Navbar = () => {
             <Link href="/#services" className="text-sm font-medium text-gray-700 hover:text-[#77B5B2] transition-colors">
               Services
             </Link>
-            <Link href="/#reviews" className="text-sm font-medium text-gray-700 hover:text-[#77B5B2] transition-colors">
-              Reviews
-            </Link>
             <Link href="/#partners" className="text-sm font-medium text-gray-700 hover:text-[#77B5B2] transition-colors">
             Partner Doctors
+            </Link>
+            <Link href="/plans/home" className="text-sm font-medium text-gray-700 hover:text-[#77B5B2] transition-colors">
+              Plans
+            </Link>
+            <Link href="/#reviews" className="text-sm font-medium text-gray-700 hover:text-[#77B5B2] transition-colors">
+              Reviews
             </Link>
             <Link href="/#contact" className="text-sm font-medium text-gray-700 hover:text-[#77B5B2] transition-colors">
               Contact

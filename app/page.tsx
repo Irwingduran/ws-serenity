@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react"
 import { Play, DollarSign, Calendar, Building2, MessageCircle, MapPin, Mail, Phone, CheckCircle } from "lucide-react";
 import { Button } from "../components/ui/button";
 import Navbar from "../components/navbar";
@@ -17,6 +18,7 @@ import PricingTable from "../components/pricing-table"
 import StepByStepGuide from "../components/step-by-step-guide"
 
 export default function Home() {
+
   const scrollLeft = (id: string) => {
     const container = document.getElementById(id);
     if (container) {
@@ -429,6 +431,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+  
 
      <Carousel/>
 
