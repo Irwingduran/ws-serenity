@@ -10,9 +10,8 @@ export default function PlansPage() {
       title: "Liposculpture",
       subtitle: "360° Body Contouring",
       description: "Complete package to reshape your figure with the best specialists.",
-      price: "$6,600 USD",
-      imageUrl: "/placeholder.svg?height=400&width=800",
-      popular: true,
+      imageUrl: "/service/img4.jpg",
+      popular: false,
       items: [
         {
           icon: <Stethoscope className="h-5 w-5" />,
@@ -63,8 +62,7 @@ export default function PlansPage() {
       title: "Augmentation Mammoplasty",
       subtitle: "Breast Enhancement",
       description: "Specialized breast augmentation with high-quality implants.",
-      price: "$3,900 USD",
-      imageUrl: "/placeholder.svg?height=400&width=800",
+      imageUrl: "/service/img3.jpg",
       items: [
         {
           icon: <Stethoscope className="h-5 w-5" />,
@@ -115,8 +113,7 @@ export default function PlansPage() {
       title: "Head and Neck Surgery",
       subtitle: "Facial Procedures",
       description: "Specialized procedures for facial rejuvenation and correction.",
-      price: "$3,900 USD",
-      imageUrl: "/placeholder.svg?height=400&width=800",
+      imageUrl: "/service/img2.jpg",
       items: [
         {
           icon: <Stethoscope className="h-5 w-5" />,
@@ -167,8 +164,7 @@ export default function PlansPage() {
       title: "Bariatric",
       subtitle: "Weight Loss Surgery",
       description: "Surgical solutions for weight loss and improved metabolic health.",
-      price: "$4,200 USD",
-      imageUrl: "/placeholder.svg?height=400&width=800",
+      imageUrl: "/service/img1.jpg",
       items: [
         {
           icon: <Stethoscope className="h-5 w-5" />,
@@ -249,7 +245,6 @@ export default function PlansPage() {
                 title={plan.title}
                 subtitle={plan.subtitle}
                 description={plan.description}
-                price={plan.price}
                 imageUrl={plan.imageUrl}
                 items={plan.items}
                 ctaLink={plan.ctaLink}
