@@ -456,29 +456,31 @@ export default function Home() {
           <StepByStepGuide />
         </div>
       </section>
-         {/* Testimonial video Section */}
-         <section className="py-16 px-4 bg-white" id="about">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#507775] mb-8">
-           Testimonial of our patient that visited us in Puebla
-          </h2>
+        {/* Testimonial video Section */}
+   <section className="py-16 px-4 bg-white" id="about">
+   <div className="max-w-5xl mx-auto">
+    <h2 className="text-3xl md:text-4xl font-bold text-center text-[#507775] mb-8">
+      Testimonial of our patient that visited us in Puebla
+    </h2>
 
-          <div className="mt-12 relative aspect-video bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center">
-            <Image
-              src="/placeholder.svg?height=600&width=1000"
-              alt="Patient in Puebla"
-              width={1000}
-              height={600}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-20 h-20 bg-white/80 rounded-full flex items-center justify-center cursor-pointer">
-                <Play className="w-10 h-10 text-c ml-1" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div className="mt-12 relative" style={{padding: '56.25% 0 0 0', position: 'relative'}}>
+      <iframe 
+        src="https://player.vimeo.com/video/1101370377?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+        frameBorder="0" 
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%'
+        }} 
+        title="Testimonial: Virginia Alicia"
+      ></iframe>
+     </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+    </section>
 
          {/* Location Section */}
          <section className="py-16 px-4 bg-[#3B5998]/10">
