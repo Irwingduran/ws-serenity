@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react"
+import emailjs from 'emailjs-com';
 import { DollarSign, Calendar, Building2, MessageCircle, MapPin, Mail, Phone, ArrowRight, Sparkles, Package } from "lucide-react";
 import { Button } from "../components/ui/button";
 import Navbar from "../components/navbar";
@@ -18,6 +19,48 @@ import PricingTable from "../components/pricing-table"
 import StepByStepGuide from "../components/step-by-step-guide"
 
 export default function Home() {
+  // Contact form state
+  const [formName, setFormName] = useState('');
+  const [formEmail, setFormEmail] = useState('');
+  const [formMessage, setFormMessage] = useState('');
+  const [formPhone, setFormPhone] = useState('');
+  const [formLoading, setFormLoading] = useState(false);
+  const [formSuccess, setFormSuccess] = useState(false);
+  const [formError, setFormError] = useState(false);
+
+  // Replace with your actual EmailJS values
+  const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID;
+  const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID;
+  const EMAILJS_USER_ID = process.env.EMAILJS_USER_ID
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormLoading(true);
+    setFormSuccess(true);
+    setFormError(false);
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID!,
+        EMAILJS_TEMPLATE_ID!,
+        {
+          from_name: formName,
+          from_email: formEmail,
+          from_phone: formPhone,
+          message: formMessage,
+        },
+        EMAILJS_USER_ID
+      );
+      setFormSuccess(true);
+      setFormName('');
+      setFormEmail('');
+      setFormPhone('');
+      setFormMessage('');
+    } catch (err) {
+      setFormError(false);
+    } finally {
+      setFormLoading(false);
+    }
+  };
 
   const scrollLeft = (id: string) => {
     const container = document.getElementById(id);
@@ -555,35 +598,70 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
               <p className="mb-4">We&apos;d love to hear from you! Reach out to us for any inquiries or to schedule an appointment.</p>
               <div className="space-y-4">
-                <Link href={"https://maps.app.goo.gl/2NC9r8PKYcahpgdL7"}>
+                <a href={"https://maps.app.goo.gl/2NC9r8PKYcahpgdL7"}>
                 <div className="flex items-center">
                   <MapPin className="w-6 h-6 mr-2" />
                   <p>2P4P+P24 San Bernardino Tlaxcalancingo, Puebla.</p>
                 </div> 
-                </Link>
-                <Link href={"mailto:irvinhans@hotmail.com"}>
+                </a>
+                <a href={"mailto:irvinhans@hotmail.com"}>
                 <div className="flex items-center">
                   <Mail className="w-6 h-6 mr-2" />
                   <p>irvinhans@hotmail.com</p>
                 </div>
-                </Link>
-                <Link href={"https://wa.me/5212221116401?text=Hello%20Doctor%2C%20I%20found%20your%20profile%20on%20findoctor%20and%20I%20would%20like%20to%20schedule%20a%20consultation"}>
+                </a>
+                <a href={"https://wa.me/5212221116401?text=Hello%20Doctor%2C%20I%20found%20your%20website%20and%20I%20would%20like%20to%20schedule%20a%20consultation"}>
                 <div className="flex items-center">
                   <Phone className="w-6 h-6 mr-2" />
                   <p>+52 222 111 6401</p>
                 </div>
-                </Link>
+                </a>
               </div>
             </div>
             <div className="bg-gray-100 rounded-lg p-8">
               <h3 className="text-2xl font-bold text-[#507775] mb-4">Send Us a Message</h3>
-              <form className="space-y-4">
-                <input type="text" placeholder="Your Name" className="w-full p-2 border rounded" />
-                <input type="email" placeholder="Your Email" className="w-full p-2 border rounded" />
-                <textarea placeholder="Your Message" className="w-full p-2 border rounded" rows={4} />
-                <Button type="submit" className="bg-[#77B5B2] hover:bg-[#507775] text-white px-8 py-2 rounded">
-                  Send Message
+              <form className="space-y-4" onSubmit={handleSubmit}>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full p-2 border rounded"
+                  value={formName}
+                  onChange={e => setFormName(e.target.value)}
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="w-full p-2 border rounded"
+                  value={formEmail}
+                  onChange={e => setFormEmail(e.target.value)}
+                  required
+                />
+                <input
+                  type="tel"
+                  placeholder="(+1) 123-456-789"
+                  className="w-full p-2 border rounded"
+                  value={formPhone}
+                  onChange={e => setFormPhone(e.target.value)}
+                  required
+                />
+                <textarea
+                  placeholder="Your Message"
+                  className="w-full p-2 border rounded"
+                  rows={4}
+                  value={formMessage}
+                  onChange={e => setFormMessage(e.target.value)}
+                  required
+                />
+                <Button type="submit" className="bg-[#77B5B2] hover:bg-[#507775] text-white px-8 py-2 rounded" disabled={formLoading}>
+                  {formLoading ? 'Sending...' : 'Send Message'}
                 </Button>
+                {formSuccess && (
+                  <p className="text-green-600">Message sent successfully!</p>
+                )}
+                {formError && (
+                  <p className="text-red-600">Something went wrong. Please try again.</p>
+                )}
               </form>
             </div>
           </div>
