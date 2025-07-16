@@ -555,18 +555,24 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
               <p className="mb-4">We&apos;d love to hear from you! Reach out to us for any inquiries or to schedule an appointment.</p>
               <div className="space-y-4">
+                <Link href={"https://maps.app.goo.gl/2NC9r8PKYcahpgdL7"}>
                 <div className="flex items-center">
                   <MapPin className="w-6 h-6 mr-2" />
-                  <p>123 Serenity St, Mexico City, Mexico</p>
-                </div>
+                  <p>2P4P+P24 San Bernardino Tlaxcalancingo, Puebla.</p>
+                </div> 
+                </Link>
+                <Link href={"mailto:irvinhans@hotmail.com"}>
                 <div className="flex items-center">
                   <Mail className="w-6 h-6 mr-2" />
-                  <p>info@serenitycompany.com</p>
+                  <p>irvinhans@hotmail.com</p>
                 </div>
+                </Link>
+                <Link href={"https://wa.me/5212221116401?text=Hello%20Doctor%2C%20I%20found%20your%20profile%20on%20findoctor%20and%20I%20would%20like%20to%20schedule%20a%20consultation"}>
                 <div className="flex items-center">
                   <Phone className="w-6 h-6 mr-2" />
-                  <p>+52 55 1234 5678</p>
+                  <p>+52 222 111 6401</p>
                 </div>
+                </Link>
               </div>
             </div>
             <div className="bg-gray-100 rounded-lg p-8">

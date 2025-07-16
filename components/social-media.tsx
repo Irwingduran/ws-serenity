@@ -6,7 +6,7 @@ const SocialMediaButtons = () => {
   const socialLinks = [
     {
       name: 'WhatsApp',
-      url: '',
+      url: 'https://wa.me/5212221116401?text=Hello%20Doctor%2C%20I%20found%20your%20profile%20on%20findoctor%20and%20I%20would%20like%20to%20schedule%20a%20consultation',
       bgColor: 'bg-green-500',
       hoverColor: 'hover:bg-green-600',
       icon: (
