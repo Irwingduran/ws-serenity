@@ -59,14 +59,14 @@ const services = [
       },
       {
         id: 2,
-        title: "Great Pyramid of Cholula",
-        description: "Convalesce at the world's largest pyramid, where ancient healing energy meets modern rehabilitation.",
-        image: "/puebla/piramode.jpeg"
+        title: "International Baroque Museum",
+        description: "This innovative museum creates dialogues between Baroque art and contemporary works through interactive exhibits. The architecture itself is a modern interpretation of Baroque style.",
+        image: "/puebla/baroco.jpg"
       },
       {
         id: 3,
-        title: "Forts of Loreto and Guadalupe",
-        description: "Historic Battle of Puebla (May 5) transformed into recovery spaces with panoramic city views.",
-        image: "/puebla/fuertes.webp"
+        title: "Angelopolis",
+        description: "Angelópolis is a residential and commercial area in Puebla City, in the state of Puebla, Mexico.",
+        image: "/puebla/ange.png"
       },
 ];

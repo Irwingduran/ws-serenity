@@ -35,20 +35,16 @@ const PricingTable = () => {
       name: "Rhinoplasty",
       priceUSD: "3,900",
       priceMXN: (3900 * exchangeRate).toLocaleString(),
-      includes: "74,000",
     },
     {
       name: "Breast Augmentation",
       priceUSD: "3,900",
       priceMXN: (3900 * exchangeRate).toLocaleString(),
-      includes: "With implants",
     },
     {
       name: "360 Lipo with Fat Transfer to Buttocks and Hips (Brazilian Butt Lift)",
       priceUSD: "6,600",
       priceMXN: (6600 * exchangeRate).toLocaleString(),
-      includes:
-        "Abdomen, pubic area, upper and lower back. Not included: Arm, thigh, or underarm liposuction.",
     },
     {
       name: "Conventional Lipoabdominoplasty (Tummy Tuck)",
@@ -117,7 +113,6 @@ const PricingTable = () => {
           <div className="grid grid-cols-3 bg-[#507775] text-white font-semibold">
             <div className="p-4">SURGERY</div>
             <div className="p-4 text-center">PRICE IN {currency.toUpperCase()}</div>
-            <div className="p-4">WHAT’S INCLUDED</div>
           </div>
 
           {/* Table Body */}

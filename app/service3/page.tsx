@@ -18,9 +18,9 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
     style={{ backgroundImage: "url('/service/img4.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}
   >
     <div className="max-w-7xl mx-auto px-4 py-20 md:py-32 text-center text-black">
-      <h1 className="text-4xl md:text-6xl font-bold mb-4">Transform Your Health</h1>
-      <h2 className="text-2xl md:text-4xl font-semibold mb-4">Expert Bariatric Surgery Procedures</h2>
-      <h3 className="text-xl md:text-3xl font-medium mb-12">Achieve Sustainable Weight Loss and Improved Wellbeing</h3>
+      <h1 className="text-4xl md:text-6xl font-bold mb-4">Refine Your Profile</h1>
+      <h2 className="text-2xl md:text-4xl font-semibold mb-4">Expert Rhinoplasty Procedures</h2>
+      <h3 className="text-xl md:text-3xl font-medium mb-12">Achieve Facial Harmony and Boost Your Confidence</h3>
       <Button className="mt-8 bg-[#77B5B2] hover:bg-[#507775] text-white px-8 py-6 text-lg rounded-full">
         Book Your Consultation
       </Button>
@@ -30,10 +30,9 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
   {/* Services Section */}
   <section className="py-16 px-4 bg-white">
     <div className="max-w-7xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#507775] text-center mb-8">Bariatric Surgery</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-[#507775] text-center mb-8">Rhinoplasty</h2>
       <p className="text-lg text-center mb-12">
-        We specialize in weight loss surgery to help you achieve lasting results. Discover how our bariatric
-        procedures can transform your health and quality of life.
+        We specialize in nasal surgery to enhance both form and function. Discover how our rhinoplasty procedures can improve your facial aesthetics and breathing.
       </p>
 
       {/* Service Details */}
@@ -41,14 +40,15 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
         {/* Left Column: Service Overview */}
         <div className="space-y-8">
           <div className="bg-[#F5F7FA] p-8 rounded-lg shadow-md">
-            <h3 className="text-2xl font-bold text-[#507775] mb-4">What is Bariatric Surgery?</h3>
+            <h3 className="text-2xl font-bold text-[#507775] mb-4">What is Rhinoplasty?</h3>
             <p className="text-gray-600 mb-4">
-              Bariatric surgery refers to various procedures that help with weight loss by making changes to your digestive system. These surgeries are life-changing solutions for individuals struggling with obesity.
+              Rhinoplasty, commonly called a "nose job," is a surgical procedure that changes the shape or improves the function of the nose. It can address cosmetic concerns, breathing issues, or both.
             </p>
             <ul className="list-disc list-inside text-gray-600">
-              <li>Proven long-term weight loss results</li>
-              <li>Improvement or remission of obesity-related conditions</li>
-              <li>Minimally invasive techniques with faster recovery</li>
+              <li>Enhances facial harmony and proportions</li>
+              <li>Corrects breathing problems from structural abnormalities</li>
+              <li>Can repair nasal trauma or congenital defects</li>
+              <li>Provides natural-looking, long-lasting results</li>
             </ul>
           </div>
 
@@ -63,8 +63,8 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
                   1 
                 </div> 
                 <div> 
-                  <h4 className="font-semibold text-[#507775]">Comprehensive Evaluation</h4> 
-                  <p className="text-gray-600">We assess your health status and design a personalized treatment plan.</p> 
+                  <h4 className="font-semibold text-[#507775]">Consultation</h4> 
+                  <p className="text-gray-600">We evaluate your nasal structure, discuss goals, and create a surgical plan.</p> 
                 </div> 
               </div>
               
@@ -74,8 +74,8 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
                   2 
                 </div> 
                 <div> 
-                  <h4 className="font-semibold text-[#507775]">Surgery</h4> 
-                  <p className="text-gray-600">Performed laparoscopically under general anesthesia for minimal invasiveness.</p> 
+                  <h4 className="font-semibold text-[#507775]">Anesthesia</h4> 
+                  <p className="text-gray-600">Administered for your comfort during the procedure (general or local with sedation).</p> 
                 </div> 
               </div>
               
@@ -85,8 +85,8 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
                   3 
                 </div> 
                 <div> 
-                  <h4 className="font-semibold text-[#507775]">Hospital Stay</h4> 
-                  <p className="text-gray-600">Typically 1-2 nights for monitoring and initial recovery.</p> 
+                  <h4 className="font-semibold text-[#507775]">Incisions</h4> 
+                  <p className="text-gray-600">Made inside the nose (closed rhinoplasty) or across the columella (open rhinoplasty).</p> 
                 </div> 
               </div>
               
@@ -96,8 +96,8 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
                   4 
                 </div> 
                 <div> 
-                  <h4 className="font-semibold text-[#507775]">Nutritional Transition</h4> 
-                  <p className="text-gray-600">Gradual progression from liquids to solid foods under guidance.</p> 
+                  <h4 className="font-semibold text-[#507775]">Reshaping</h4> 
+                  <p className="text-gray-600">Cartilage and bone are sculpted to achieve the desired shape.</p> 
                 </div> 
               </div>
               
@@ -107,8 +107,8 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
                   5 
                 </div> 
                 <div> 
-                  <h4 className="font-semibold text-[#507775]">Recovery Support</h4> 
-                  <p className="text-gray-600">We provide comprehensive post-operative care instructions.</p> 
+                  <h4 className="font-semibold text-[#507775]">Closure</h4> 
+                  <p className="text-gray-600">Incisions are closed and nasal splints/tubes may be placed.</p> 
                 </div> 
               </div>
               
@@ -118,8 +118,8 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
                   6 
                 </div> 
                 <div> 
-                  <h4 className="font-semibold text-[#507775]">Long-term Follow-up</h4> 
-                  <p className="text-gray-600">Regular check-ins to monitor progress and nutritional status.</p> 
+                  <h4 className="font-semibold text-[#507775]">Recovery</h4> 
+                  <p className="text-gray-600">Initial swelling subsides in weeks, with final results visible after a year.</p> 
                 </div> 
               </div>
             </div> 
@@ -139,7 +139,7 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
                 <div>
                   <h4 className="font-semibold text-[#507775]">Board-Certified Surgeons</h4>
                   <p className="text-gray-600">
-                    Specialists with extensive experience in bariatric procedures.
+                    Specialists with extensive experience in facial plastic surgery.
                   </p>
                 </div>
               </div>
@@ -148,8 +148,8 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
                   ✓
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[#507775]">Multidisciplinary Team</h4>
-                  <p className="text-gray-600">Nutritionists, psychologists and physicians working together for your success.</p>
+                  <h4 className="font-semibold text-[#507775]">Natural Results</h4>
+                  <p className="text-gray-600">We focus on enhancing your natural beauty while maintaining nasal function.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -157,8 +157,8 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
                   ✓
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[#507775]">Comprehensive Care</h4>
-                  <p className="text-gray-600">From pre-op evaluation to long-term follow-up for optimal results.</p>
+                  <h4 className="font-semibold text-[#507775]">Personalized Approach</h4>
+                  <p className="text-gray-600">Each procedure is customized to your unique facial structure and goals.</p>
                 </div>
               </div>
             </div>
@@ -190,23 +190,23 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
 
       {activeTab === "services" && (
         <div className="bg-white p-8 rounded-lg shadow-md">
-          <h2 className="text-3xl font-bold text-[#507775] text-center mb-8">Bariatric Surgery Services</h2>
+          <h2 className="text-3xl font-bold text-[#507775] text-center mb-8">Rhinoplasty Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              "Roux-en-Y Gastric Bypass",
-              "Mini Gastric Bypass",
-              "Laparoscopic Sleeve Gastrectomy",
-              "Endoscopic Sleeve Gastrectomy",
-              "Single Port Sleeve Gastrectomy",
-              "Intragastric Balloon (Spatz or BIB)",
-              "Intragastric Balloon Removal",
-              "Intragastric Balloon Adjustment",
-              "Sleeve to Bypass Conversion",
-              "Hiatal Hernia Repair with Bariatric Surgery",
-              "Umbilical Hernia Repair with Bariatric Surgery",
-              "Patients with BMI > 50",
-              "Preoperative Endoscopy",
-              "Intraoperative Endoscopy"
+              "Primary Rhinoplasty",
+              "Revision Rhinoplasty",
+              "Ethnic Rhinoplasty",
+              "Male Rhinoplasty",
+              "Functional Rhinoplasty (for breathing issues)",
+              "Septorhinoplasty (deviated septum correction)",
+              "Tip Plasty (nasal tip refinement)",
+              "Non-Surgical Rhinoplasty (filler-based)",
+              "Open Rhinoplasty",
+              "Closed Rhinoplasty",
+              "Preservation Rhinoplasty",
+              "Rhinoplasty with Cartilage Grafting",
+              "Post-Traumatic Rhinoplasty",
+              "Pediatric Rhinoplasty (for congenital defects)"
             ].map((service, index) => (
               <div key={index} className="flex items-start p-4 border-b border-gray-100">
                 <ChevronRight className="h-5 w-5 text-[#77B5B2] mr-2 mt-1 flex-shrink-0" />
@@ -222,118 +222,118 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
           <h2 className="text-3xl font-bold text-[#507775] text-center mb-8">FREQUENTLY ASKED QUESTIONS</h2>
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger className="text-[#507775] font-medium">What is sleeve gastrectomy?</AccordionTrigger>
-              <AccordionContent>A surgery that reduces stomach size to help you eat less and feel full faster.</AccordionContent>
+              <AccordionTrigger className="text-[#507775] font-medium">What is rhinoplasty?</AccordionTrigger>
+              <AccordionContent>A surgical procedure to reshape or reconstruct the nose for cosmetic or functional purposes.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger className="text-[#507775] font-medium">
-                How does sleeve gastrectomy work for weight loss?
+                How long does rhinoplasty surgery take?
               </AccordionTrigger>
-              <AccordionContent>By reducing stomach capacity, you consume smaller portions and feel satisfied with less food.</AccordionContent>
+              <AccordionContent>Typically 1-3 hours depending on complexity.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
               <AccordionTrigger className="text-[#507775] font-medium">
-                Who are candidates for sleeve gastrectomy?
+                What's the difference between open and closed rhinoplasty?
               </AccordionTrigger>
               <AccordionContent>
-                Individuals with severe obesity (high BMI) who haven't succeeded with other weight loss methods.
+                Open involves an external incision for better visibility; closed uses only internal incisions with less visible scarring.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
               <AccordionTrigger className="text-[#507775] font-medium">
-                What are the benefits of sleeve gastrectomy?
+                How long is the recovery period?
               </AccordionTrigger>
-              <AccordionContent>Significant weight loss, improvement of obesity-related health problems, and relatively quick recovery.</AccordionContent>
+              <AccordionContent>Initial swelling subsides in 2-3 weeks, but final results may take up to a year as subtle changes continue.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger className="text-[#507775] font-medium">What are the risks?</AccordionTrigger>
-              <AccordionContent>As with any surgery, risks include bleeding, infection, stomach leaks and long-term complications.</AccordionContent>
+              <AccordionTrigger className="text-[#507775] font-medium">Will there be visible scars?</AccordionTrigger>
+              <AccordionContent>With closed rhinoplasty, no. With open, a small scar on the columella that typically fades well.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-6">
-              <AccordionTrigger className="text-[#507775] font-medium">How much weight can I expect to lose?</AccordionTrigger>
-              <AccordionContent>Most patients lose 60-70% of excess weight within one year.</AccordionContent>
+              <AccordionTrigger className="text-[#507775] font-medium">When can I return to work?</AccordionTrigger>
+              <AccordionContent>Most patients return to non-strenuous work in 1-2 weeks.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-7">
               <AccordionTrigger className="text-[#507775] font-medium">
-                What is the recovery process like?
+                What are the risks of rhinoplasty?
               </AccordionTrigger>
-              <AccordionContent>Begins with liquid diet, then soft foods, gradually introducing solids. Requires rest and medical follow-up.</AccordionContent>
+              <AccordionContent>Bleeding, infection, breathing difficulties, or need for revision surgery.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-8">
               <AccordionTrigger className="text-[#507775] font-medium">
-                What diet should I follow after surgery?
+                Can rhinoplasty fix breathing problems?
               </AccordionTrigger>
-              <AccordionContent>Strict low-fat, low-sugar, high-protein diet to maximize weight loss and avoid complications.</AccordionContent>
+              <AccordionContent>Yes, functional rhinoplasty can correct structural issues like deviated septum.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-9">
-              <AccordionTrigger className="text-[#507775] font-medium">How long does the surgery take?</AccordionTrigger>
-              <AccordionContent>Approximately 1-2 hours.</AccordionContent>
+              <AccordionTrigger className="text-[#507775] font-medium">How long do results last?</AccordionTrigger>
+              <AccordionContent>Permanent, though natural aging continues.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-10">
               <AccordionTrigger className="text-[#507775] font-medium">
-                What preparation is needed before surgery?
+                What's the best age for rhinoplasty?
               </AccordionTrigger>
-              <AccordionContent>Medical tests, nutritional and psychological evaluation, and following a pre-op diet.</AccordionContent>
+              <AccordionContent>After nasal growth is complete, typically after age 15-16 for girls, slightly later for boys.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-11">
               <AccordionTrigger className="text-[#507775] font-medium">
-                What is the cost of sleeve gastrectomy?
+                What is revision rhinoplasty?
               </AccordionTrigger>
-              <AccordionContent>Price varies - please contact us for updated pricing information.</AccordionContent>
+              <AccordionContent>Surgery to correct or improve results from a previous rhinoplasty.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-12">
               <AccordionTrigger className="text-[#507775] font-medium">
-                What kind of post-op follow-up do you provide?
+                How is ethnic rhinoplasty different?
               </AccordionTrigger>
-              <AccordionContent>Continuous support with nutritionists and surgeons.</AccordionContent>
+              <AccordionContent>Focuses on preserving ethnic characteristics while refining the nose's appearance.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-13">
               <AccordionTrigger className="text-[#507775] font-medium">
-                What complications might occur?
+                When can I exercise after surgery?
               </AccordionTrigger>
-              <AccordionContent>Leaks, strictures, reflux, and nutritional deficiencies.</AccordionContent>
+              <AccordionContent>Light activity after 2-3 weeks, full activity after 4-6 weeks.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-14">
               <AccordionTrigger className="text-[#507775] font-medium">
-                Are vitamin supplements necessary after surgery?
+                Will I have packing in my nose?
               </AccordionTrigger>
-              <AccordionContent>Yes, since the stomach absorbs fewer nutrients post-surgery.</AccordionContent>
+              <AccordionContent>Sometimes, but we often use dissolvable packing or none at all.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-15">
               <AccordionTrigger className="text-[#507775] font-medium">
-                How long do I need to stay in Puebla for the process?
+                How much does rhinoplasty cost?
               </AccordionTrigger>
-              <AccordionContent>Depends on the service package chosen by the client.</AccordionContent>
+              <AccordionContent>Varies by procedure complexity - contact us for a personalized quote.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-16">
               <AccordionTrigger className="text-[#507775] font-medium">
-                How is payment for surgery made?
+                Is rhinoplasty painful?
               </AccordionTrigger>
-              <AccordionContent>By bank transfer or credit card.</AccordionContent>
+              <AccordionContent>Most patients report discomfort rather than severe pain, well-controlled with medication.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-17">
               <AccordionTrigger className="text-[#507775] font-medium">
-                What psychological support do you provide?
+                Can I see computer imaging of my potential results?
               </AccordionTrigger>
-              <AccordionContent>Psychological follow-up throughout the entire process.</AccordionContent>
+              <AccordionContent>Yes, we provide computer imaging during consultation to help visualize potential outcomes.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-18">
               <AccordionTrigger className="text-[#507775] font-medium">
-                How does sleeve gastrectomy affect blood sugar levels?
+                What's non-surgical rhinoplasty?
               </AccordionTrigger>
-              <AccordionContent>Generally improves them, especially for people with type 2 diabetes.</AccordionContent>
+              <AccordionContent>Uses dermal fillers to temporarily alter nose shape, best for minor corrections.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-19">
               <AccordionTrigger className="text-[#507775] font-medium">
-                When can I exercise after surgery?
+                How do I prepare for rhinoplasty?
               </AccordionTrigger>
-              <AccordionContent>Light walks soon, more intense exercise after a few weeks.</AccordionContent>
+              <AccordionContent>Avoid certain medications/supplements, stop smoking, and follow pre-op instructions carefully.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-20">
               <AccordionTrigger className="text-[#507775] font-medium">
-                What is gastric bypass?
+                When can I wear glasses after surgery?
               </AccordionTrigger>
-              <AccordionContent>A procedure that reduces stomach size and connects it directly to the small intestine.</AccordionContent>
+              <AccordionContent>Typically after 4-6 weeks to avoid pressure on the healing nose.</AccordionContent>
             </AccordionItem>
           </Accordion>
         </div>
@@ -341,36 +341,14 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
     </div>
   </section>
 
-  {/* Testimonials 
-              <div className="bg-[#F5F7FA] p-8 rounded-lg shadow-md">
-                <h3 className="text-2xl font-bold text-[#3B5998] mb-4">Patient Stories</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-[#4A90E2] text-white rounded-full flex items-center justify-center">👤</div>
-                    <div>
-                      <h4 className="font-semibold text-[#3B5998]">Ana R.</h4>
-                      <p className="text-gray-600">"I’ve lost over 50 pounds and feel healthier than ever. Thank you!"</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-[#4A90E2] text-white rounded-full flex items-center justify-center">👤</div>
-                    <div>
-                      <h4 className="font-semibold text-[#3B5998]">Carlos M.</h4>
-                      <p className="text-gray-600">"The team was supportive throughout my journey. Highly recommend!"</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    */}
-
-<RequiredStudies/>
+  <RequiredStudies/>
 
   {/* Call to Action */}
   <section className="py-16 px-4 bg-[#77B5B2]/10">
     <div className="max-w-5xl mx-auto text-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#507775] mb-6">Ready to Transform Your Health?</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-[#507775] mb-6">Ready to Enhance Your Profile?</h2>
       <p className="text-lg mb-8">
-        Schedule a consultation with our expert team to discuss your goals and create a personalized treatment plan.
+        Schedule a consultation with our expert surgeons to discuss your rhinoplasty goals and options.
       </p>
       <Button className="bg-[#77B5B2] hover:bg-[#507775] text-white px-8 py-6 text-lg rounded-full">
         Book Your Consultation Today

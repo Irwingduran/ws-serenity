@@ -139,9 +139,9 @@ const attractions = [
   },
   {
     id: 2,
-    title: "Forts of Loreto and Guadalupe",
-    description: "These 19th century military fortifications were originally chapels built on the Acueyametepec hill. They became famous as the scene of the Battle of Puebla during the French Intervention in Mexico. Now housing site museums, they offer panoramic views of the city.",
-    image: "/puebla/fuertes.webp"
+    title: "Angelopolis",
+    description: "Angelopolis area has an approximate area of 15 km2. It is notorious for the high purchasing power of most of its residents and the amount of skyscrapers, where the tallest building in Puebla is the Torre Adamant II, located on the side of the Atlixcáyotl Avenue. There are also several hospitals; private as the Puebla Hospital, the Ángeles Hospital and Torres Médicas, and public, as Cholula General Hospital and Hospital para el Niño Poblano.",
+    image: "/puebla/angelopolis.jpg"
   },
   {
     id: 3,
@@ -160,15 +160,14 @@ const attractions = [
   },
   {
     id: 5,
-    title: "Great Pyramid of Cholula",
-    description: "Considered the largest pyramid in the world by volume, this ancient temple was built in layers over centuries. Visitors can explore its tunnels to see preserved murals and appreciate how each civilization built over the previous structure.",
-    admission: "$80",
-    image: "/puebla/piramode.jpeg"
+    title: "Solesta",
+    description: "Bright shopping center with dome, stores, movies and eclectic choices of casual and modern dishes.",
+    image: "/puebla/solesta.jpg"
   },
   {
     id: 6,
-    title: "Barrio de los Sapos",
-    description: "This colorful neighborhood in Puebla's historic center is famous for its antique shops, art galleries, and traditional 'pasita' liqueur. The perfect place to find unique souvenirs while enjoying colonial architecture.",
-    image: "/puebla/b-sapos.webp"
+    title: "Star of Puebla",
+    description: "The wheel received the Guinness World Record for the largest portable observation wheel in the world, with a diameter of 69.8 meters (229 feet) and a height of 80 meters. La Estrella de Puebla is part of a tourist complex that includes the Parque Lineal, Jardín del Arte, Eco Parque Metropolitano, Paseo del Río Atoyac, as well as the Museo Internacional del Barroco (International Museum of the Baroque).",
+    image: "/puebla/ange.png"
   }
 ];

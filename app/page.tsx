@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react"
-import { Play, DollarSign, Calendar, Building2, MessageCircle, MapPin, Mail, Phone, ArrowRight, Sparkles, Package } from "lucide-react";
+import { DollarSign, Calendar, Building2, MessageCircle, MapPin, Mail, Phone, ArrowRight, Sparkles, Package } from "lucide-react";
 import { Button } from "../components/ui/button";
 import Navbar from "../components/navbar";
 import Carousel from "../components/carousel";
@@ -64,7 +64,7 @@ export default function Home() {
       highlight: "",
     },
     {
-      name: "Head & Neck Surgery",
+      name: "Rhinoplasty",
       description: "Facial Procedures",
       highlight: "",
     },
@@ -141,17 +141,13 @@ export default function Home() {
 
           <div className="mt-12 relative aspect-video bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center">
             <Image
-              src="/placeholder.svg?height=600&width=1000"
+              src="/about-us.png"
               alt="About us"
               width={1000}
               height={600}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-20 h-20 bg-white/80 rounded-full flex items-center justify-center cursor-pointer">
-                <Play className="w-10 h-10 text-c ml-1" />
-              </div>
-            </div>
+       
           </div>
         </div>
       </section>
@@ -268,7 +264,7 @@ export default function Home() {
             />
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-[#507775] mb-4">Head & Neck Surgery</h3>
+            <h3 className="text-2xl font-bold text-[#507775] mb-4">Rhinoplasty</h3>
             <p className="text-gray-700">
               Specialized surgeries addressing both functional and cosmetic concerns of the head and neck, including rhinoplasty and facial contouring.
             </p>
@@ -488,7 +484,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-[#507775] mb-8">Our Location</h2>
           <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.888244552345!2d-99.169485684526!3d19.42702074608145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sMexico%20City%2C%20CDMX%2C%20Mexico!5e0!3m2!1sen!2sus!4v1633031670013!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3772.2938690298042!2d-98.26749012479635!3d19.00676808218361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDAwJzI0LjQiTiA5OMKwMTUnNTMuNyJX!5e0!3m2!1ses-419!2smx!4v1752640959990!5m2!1ses-419!2smx"
               width="100%"
               height="100%"
               style={{ border: 0 }}
