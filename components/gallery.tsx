@@ -12,9 +12,9 @@ const GallerySection = () => {
   const [activeCategory, setActiveCategory] = useState<string>('all');
   
   const galleryImages: GalleryImage[] = [
-    { src: "/gallery/img8.jpeg", category: "Biatric", alt: "before and after" },
-    { src: "/gallery/img3.jpeg", category: "Biatric", alt: " transformation" },
-    { src: "/gallery/img4.jpeg", category: "Biatric", alt: " surgery results" },
+    { src: "/gallery/img8.jpeg", category: "Bariatric", alt: "before and after" },
+    { src: "/gallery/img3.jpeg", category: "Bariatric", alt: " transformation" },
+    { src: "/gallery/img4.jpeg", category: "Bariatric", alt: " surgery results" },
     { src: "/gallery/rino.jpg", category: "Rino", alt: "Facial " },
     { src: "/gallery/rino2.jpg", category: "Rino", alt: " replacement recovery" },
     { src: "/gallery/rino4.jpg", category: "Rino", alt: " injury " },
@@ -26,7 +26,7 @@ const GallerySection = () => {
   const categories = [
     { id: 'all', name: 'All Procedures' },
     { id: 'Rino', name: 'Rino' },
-    { id: 'Biatric', name: 'Biatric' },
+    { id: 'Bariatric', name: 'Bariatric' },
    // { id: 'Prostate', name: 'Prostate' },
  //   { id: 'Facial Surgery', name: 'Facial Surgery' },
   ];

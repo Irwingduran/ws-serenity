@@ -17,6 +17,7 @@ import GallerySection from "../components/gallery";
 import WelcomeModal from "../components/modal";
 import PricingTable from "../components/pricing-table"
 import StepByStepGuide from "../components/step-by-step-guide"
+import QASection from "../components/qa-section";
 
 export default function Home() {
   // Contact form state
@@ -174,12 +175,10 @@ export default function Home() {
           </h2>
 
           <p className="text-lg mb-4">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium quo ut ipsa veniam neque pariatur ipsum iusto ea blanditiis dolorum. Exercitationem ea sit maxime ex aliquam possimus impedit rem! Suscipit?
-            <Link href="#" className="text-[#4A90E2] font-medium">
-              {" "}
-              robotic sleeve gastrectomy{" "}
-            </Link>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vero, nisi eveniet dignissimos praesentium similique voluptatum ratione exercitationem ea, necessitatibus voluptas soluta nam veniam officia molestias illo animi iusto obcaecati!
+          At Serenity Surgery Planner, we specialize in coordinating safe, high-quality bariatric and plastic surgeries in Puebla, Mexico — designed especially
+           for international patients from the U.S. and South America. Our certified surgeons, personalized care, and all-inclusive planning make your medical
+            journey seamless, from first contact to full recovery. Trusted by patients from Texas, South America and beyond, we offer confidence, professionalism,
+             and human warmth in every step of your transformation.
           </p>
 
           <div className="mt-12 relative aspect-video bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center">
@@ -198,6 +197,32 @@ export default function Home() {
      <section>
       <Slides/>
      </section>
+
+                  {/* Testimonial video Section */}
+   <section className="py-16 px-4 bg-white" id="about">
+   <div className="max-w-5xl mx-auto">
+    <h2 className="text-3xl md:text-4xl font-bold text-center text-[#507775] mb-8">
+      Testimonial of our patient that visited us in Puebla
+    </h2>
+
+    <div className="mt-12 relative" style={{padding: '56.25% 0 0 0', position: 'relative'}}>
+      <iframe 
+        src="https://player.vimeo.com/video/1101370377?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+        frameBorder="0" 
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%'
+        }} 
+        title="Testimonial: Virginia Alicia"
+      ></iframe>
+     </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+    </section>
 
       {/* Stats Section */}
       <section className="py-16 px-4 bg-white">
@@ -495,31 +520,7 @@ export default function Home() {
           <StepByStepGuide />
         </div>
       </section>
-        {/* Testimonial video Section */}
-   <section className="py-16 px-4 bg-white" id="about">
-   <div className="max-w-5xl mx-auto">
-    <h2 className="text-3xl md:text-4xl font-bold text-center text-[#507775] mb-8">
-      Testimonial of our patient that visited us in Puebla
-    </h2>
-
-    <div className="mt-12 relative" style={{padding: '56.25% 0 0 0', position: 'relative'}}>
-      <iframe 
-        src="https://player.vimeo.com/video/1101370377?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-        frameBorder="0" 
-        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%'
-        }} 
-        title="Testimonial: Virginia Alicia"
-      ></iframe>
-     </div>
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    </div>
-    </section>
+ 
 
          {/* Location Section */}
          <section className="py-16 px-4 bg-[#3B5998]/10">
@@ -540,10 +541,14 @@ export default function Home() {
 
     
 
-      {/* Carousel Section */}
-      <Carousel/>
-             {/* Reviews Section */}
-             <section className="py-16 px-4 bg-white" id="reviews">
+         {/* Carousel Section */}
+        <Carousel/>
+
+        {/* QA Section */}
+        <QASection/>
+
+        {/* Reviews Section */}
+         <section className="py-16 px-4 bg-white" id="reviews">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-[#507775] mb-8">What Our Clients Say</h2>
           <div className="relative">
@@ -587,7 +592,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+         </section>
 
         {/* Contact Section */}
         <section className="py-16 px-4 bg-white" id="contact">
