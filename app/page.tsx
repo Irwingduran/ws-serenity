@@ -606,13 +606,14 @@ export default function Home() {
                 <a href={"https://maps.app.goo.gl/2NC9r8PKYcahpgdL7"}>
                 <div className="flex items-center">
                   <MapPin className="w-6 h-6 mr-2" />
-                  <p>2P4P+P24 San Bernardino Tlaxcalancingo, Puebla.</p>
+                  <p>Cerrada de la Princesa 12, 72830 San Bernardino Tlaxcalancingo, Pue. </p>
+                  <p>Lomas de Angelópolis </p>
                 </div> 
                 </a>
                 <a href={"mailto:serenity.turismomed@gmail.com"}>
                 <div className="flex items-center">
                   <Mail className="w-6 h-6 mr-2" />
-                  <p>irvinhans@hotmail.com</p>
+                  <p>serenity.turismomed@gmail.com</p>
                 </div>
                 </a>
                 <a href={"https://wa.me/16195695034?text=Hello%20Doctor%2C%20I%20found%20your%20website%20and%20I%20would%20like%20to%20schedule%20a%20consultation"}>
