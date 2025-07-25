@@ -181,16 +181,21 @@ export default function Home() {
              and human warmth in every step of your transformation.
           </p>
 
-          <div className="mt-12 relative aspect-video bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center">
-            <Image
-              src="/about-us.png"
-              alt="About us"
-              width={1000}
-              height={600}
-              className="w-full h-full object-cover"
-            />
-       
-          </div>
+          <div className="mt-12 relative" style={{padding: '56.25% 0 0 0', position: 'relative'}}>
+      <iframe 
+        src="https://player.vimeo.com/video/1101370377?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+        frameBorder="0" 
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%'
+        }} 
+        title="Testimonial: Virginia Alicia"
+      ></iframe>
+     </div>
         </div>
       </section>
 
@@ -198,7 +203,7 @@ export default function Home() {
       <Slides/>
      </section>
 
-                  {/* Testimonial video Section */}
+                  {/* Testimonial video Section 
    <section className="py-16 px-4 bg-white" id="about">
    <div className="max-w-5xl mx-auto">
     <h2 className="text-3xl md:text-4xl font-bold text-center text-[#507775] mb-8">
@@ -223,7 +228,7 @@ export default function Home() {
     <script src="https://player.vimeo.com/api/player.js"></script>
     </div>
     </section>
-
+    */}
       {/* Stats Section */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
@@ -606,20 +611,19 @@ export default function Home() {
                 <a href={"https://maps.app.goo.gl/2NC9r8PKYcahpgdL7"}>
                 <div className="flex items-center">
                   <MapPin className="w-6 h-6 mr-2" />
-                  <p>Cerrada de la Princesa 12, 72830 San Bernardino Tlaxcalancingo, Pue. </p>
-                  <p>Lomas de Angelópolis </p>
+                  <p>2P4P+P24 San Bernardino Tlaxcalancingo, Puebla.</p>
                 </div> 
                 </a>
-                <a href={"mailto:serenity.turismomed@gmail.com"}>
+                <a href={"mailto:irvinhans@hotmail.com"}>
                 <div className="flex items-center">
                   <Mail className="w-6 h-6 mr-2" />
-                  <p>serenity.turismomed@gmail.com</p>
+                  <p>irvinhans@hotmail.com</p>
                 </div>
                 </a>
-                <a href={"https://wa.me/16195695034?text=Hello%20Doctor%2C%20I%20found%20your%20website%20and%20I%20would%20like%20to%20schedule%20a%20consultation"}>
+                <a href={"https://wa.me/5212221116401?text=Hello%20Doctor%2C%20I%20found%20your%20website%20and%20I%20would%20like%20to%20schedule%20a%20consultation"}>
                 <div className="flex items-center">
                   <Phone className="w-6 h-6 mr-2" />
-                  <p>+1 619 569 5034</p>
+                  <p>+52 222 111 6401</p>
                 </div>
                 </a>
               </div>
