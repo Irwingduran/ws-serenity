@@ -69,7 +69,7 @@ const Navbar = () => {
               Contact
             </Link>
             <Link 
-              href="#" 
+              href="/#contact" 
               className="px-4 py-2 text-sm font-medium bg-[#77B5B2] text-white rounded-xl hover:bg-[#5a9c99] transition-colors"
             >
               Make an Appointment
@@ -154,7 +154,7 @@ const Navbar = () => {
               Contact
             </Link>
             <Link 
-              href="#" 
+              href="/#contact" 
               onClick={closeMenu}
               className="px-4 py-3 text-sm font-medium text-center bg-[#77B5B2] text-white rounded-xl hover:bg-[#5a9c99] transition-colors"
             >

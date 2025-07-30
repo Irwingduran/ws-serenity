@@ -161,9 +161,11 @@ export default function Home() {
             .
           </p>
 
+         <a href="/plans/home">
           <Button className="mt-8 bg-[#77B5B2] hover:bg-[#507775] text-white px-8 py-6 text-lg rounded-full">
-            See princing & what&apos;s included
+            See our surgical plans & what&apos;s included
           </Button>
+          </a>
         </div>
       </section>
 
@@ -552,7 +554,7 @@ export default function Home() {
         {/* QA Section */}
         <QASection/>
 
-        {/* Reviews Section */}
+        {/* Reviews Section 
          <section className="py-16 px-4 bg-white" id="reviews">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-[#507775] mb-8">What Our Clients Say</h2>
@@ -597,7 +599,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-         </section>
+         </section> */}
 
         {/* Contact Section */}
         <section className="py-16 px-4 bg-white" id="contact">

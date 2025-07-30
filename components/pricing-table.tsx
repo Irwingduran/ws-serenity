@@ -160,7 +160,9 @@ const PricingTable = () => {
         <p className="text-gray-700 mb-4">
           Interested in one of our procedures? Contact us for more information or to schedule a consultation.
         </p>
+        <a href="#contact">
         <Button className="bg-[#77B5B2] hover:bg-[#507775] text-white px-6 py-2 rounded-s-lg">Request Information</Button>
+        </a>
       </div>
     </div>
   )

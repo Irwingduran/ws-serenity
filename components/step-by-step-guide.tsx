@@ -434,21 +434,6 @@ const StepByStepGuide = () => {
           </div>
         </div>
       </div>
-
-      <div className="p-6 bg-[#F5F7FA] border-t border-gray-200">
-        <div className="max-w-3xl mx-auto text-center">
-          <h3 className="text-xl font-semibold text-[#507775] mb-3">Need help with the process?</h3>
-          <p className="text-gray-600 mb-4">
-            Our team of coordinators is available to guide you through each step and answer all your questions.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-[#77B5B2] hover:bg-[#507775] text-white">Schedule an Informational Call</Button>
-            <Button variant="outline" className="border-[#77B5B2] text-[#507775]">
-              Contact via WhatsApp
-            </Button>
-          </div>
-        </div>
-      </div>
     </div>
   )
 }

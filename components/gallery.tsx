@@ -12,14 +12,19 @@ const GallerySection = () => {
   const [activeCategory, setActiveCategory] = useState<string>('all');
   
   const galleryImages: GalleryImage[] = [
-    { src: "/gallery/img8.jpeg", category: "Bariatric", alt: "before and after" },
-    { src: "/gallery/img3.jpeg", category: "Bariatric", alt: " transformation" },
-    { src: "/gallery/img4.jpeg", category: "Bariatric", alt: " surgery results" },
-    { src: "/gallery/rino.jpg", category: "Rino", alt: "Facial " },
-    { src: "/gallery/rino2.jpg", category: "Rino", alt: " replacement recovery" },
-    { src: "/gallery/rino4.jpg", category: "Rino", alt: " injury " },
-    { src: "/gallery/rino5.jpg", category: "Rino", alt: " replacement recovery" },
-    { src: "/gallery/rino6.jpg", category: "Rino", alt: " injury " },
+        { src: "/gallery/rino/rino1.jpg", category: "Rino", alt: " injury " },
+    { src: "/gallery/bariatric/bariatric1.jpg", category: "Bariatric", alt: "before and after" },
+    { src: "/gallery/bariatric/bariatric2.jpg", category: "Bariatric", alt: "before and after" },
+    { src: "/gallery/bariatric/bariatric3.jpg", category: "Bariatric", alt: "before and after" },
+    { src: "/gallery/bariatric/bariatric4.jpg", category: "Bariatric", alt: "before and after" },
+    { src: "/gallery/bariatric/bariatric5.jpg", category: "Bariatric", alt: "before and after" },
+    { src: "/gallery/bariatric/bariatric6.jpg", category: "Bariatric", alt: "before and after" },
+   { src: "/gallery/bariatric/bariatric7.jpg", category: "Bariatric", alt: "before and after" },
+   { src: "/gallery/bariatric/bariatric8.jpg", category: "Bariatric", alt: "before and after" },
+   { src: "/gallery/bariatric/bariatric9.jpg", category: "Bariatric", alt: "before and after" },     
+    { src: "/gallery/bariatric/bariatric11.jpg", category: "Bariatric", alt: "before and after" },
+   { src: "/gallery/bariatric/bariatric12.jpg", category: "Bariatric", alt: "before and after" },        
+
     // Add more images with appropriate categories
   ];
 
