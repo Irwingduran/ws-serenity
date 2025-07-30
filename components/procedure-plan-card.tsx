@@ -54,7 +54,6 @@ interface ProcedurePlanCardProps {
 const ProcedurePlanCard = ({
   title,
   subtitle,
-  description,
   imageUrl,
   items,
   ctaLink,
@@ -101,12 +100,6 @@ const ProcedurePlanCard = ({
         <div className="mt-6 flex flex-col sm:flex-row gap-3">
           <Link href={ctaLink} className="flex-1">
             <Button className="w-full bg-[#77B5B2] hover:bg-[#507775] text-white">Book a Consultation</Button>
-          </Link>
-          <Link href={`${ctaLink}/info`}>
-            <Button variant="outline" className="border-[#77B5B2] text-[#507775]">
-              <Info className="h-4 w-4 mr-2" />
-              More Information
-            </Button>
           </Link>
         </div>
       </div>
