@@ -616,16 +616,16 @@ export default function Home() {
                   <p>2P4P+P24 San Bernardino Tlaxcalancingo, Puebla.</p>
                 </div> 
                 </a>
-                <a href={"mailto:irvinhans@hotmail.com"}>
+                <a href={"mailto:serenity.turismomed@gmail.com"}>
                 <div className="flex items-center">
                   <Mail className="w-6 h-6 mr-2" />
-                  <p>irvinhans@hotmail.com</p>
+                  <p>serenity.turismomed@gmail.com</p>
                 </div>
                 </a>
-                <a href={"https://wa.me/5212221116401?text=Hello%20Doctor%2C%20I%20found%20your%20website%20and%20I%20would%20like%20to%20schedule%20a%20consultation"}>
+                <a href={"https://wa.me/5216195695034?text=Hello%20Doctor%2C%20I%20found%20your%20website%20and%20I%20would%20like%20to%20schedule%20a%20consultation"}>
                 <div className="flex items-center">
                   <Phone className="w-6 h-6 mr-2" />
-                  <p>+52 222 111 6401</p>
+                  <p>+52 619 569 5034</p>
                 </div>
                 </a>
               </div>
