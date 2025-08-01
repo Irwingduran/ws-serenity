@@ -134,40 +134,40 @@ export default function Home() {
       {/* Navigation */}
       <Navbar/>
 
-      {/* Hero Section */}
-      <section
-        className="relative bg-[#F5F7FA]/80 bg-blend-overlay"
-        style={{
-          backgroundImage: "url('/img-bg.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="max-w-7xl mx-auto px-4 py-20 md:py-32 text-center text-[#507775]">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Serenity Surgery Planner</h1>
-          <h2 className="text-2xl md:text-4xl font-semibold mb-4">Specialists in Puebla, Mexico</h2>
+     {/* Hero Section */}
+<section
+  className="relative bg-[#F5F7FA]/80 bg-blend-overlay"
+  style={{
+    backgroundImage: "url('/img-bg.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20 lg:py-32 text-center text-[#507775]">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Serenity Surgery Planner</h1>
+    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Specialists in Puebla, Mexico</h2>
 
-          <div className="space-y-2 max-w-2xl mx-auto">
-            <p className="text-lg md:text-xl">Surgeries offered 7 days a week</p>
-            <p className="text-lg md:text-xl">5-Star hotel stay included</p>
-            <p className="text-lg md:text-xl">Driver & guide including airport pickup / drop-off</p>
-          </div>
+    <div className="space-y-2 max-w-2xl mx-auto text-base sm:text-lg md:text-xl">
+      <p>Surgeries offered 7 days a week</p>
+      <p>5-Star hotel stay included</p>
+      <p>Driver & guide including airport pickup / drop-off</p>
+    </div>
 
-          <p className="mt-8 text-lg">
-            We specialize in 
-            <Link href="#services" className="underline ml-1">
-              Plastic Surgery Services
-            </Link>
-            .
-          </p>
+    <p className="mt-6 sm:mt-8 text-base sm:text-lg">
+      We specialize in 
+      <Link href="#services" className="underline ml-1">
+        Plastic Surgery Services
+      </Link>
+      .
+    </p>
 
-         <a href="/plans/home">
-          <Button className="mt-8 bg-[#77B5B2] hover:bg-[#507775] text-white px-8 py-6 text-lg rounded-full">
-            See our surgical plans & what&apos;s included
-          </Button>
-          </a>
-        </div>
-      </section>
+    <a href="/plans/home">
+      <Button className="mt-6 sm:mt-8 bg-[#77B5B2] hover:bg-[#507775] text-white px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg rounded-full">
+        See our surgical plans & what&apos;s included
+      </Button>
+    </a>
+  </div>
+</section>
 
       {/* About Section */}
       <section className="py-16 px-4 bg-white" id="about">
