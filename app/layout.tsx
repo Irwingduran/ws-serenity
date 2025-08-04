@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Serenity",
-  description: "Especialista en Cirugía General, Cirugía Laparoscópica Avanzada y Cirugía Bariátrica.",
+  description: "Clinic specializing in bariatric surgery, Rhinoplasty, Mammoplasty and liposculpture.", 
   icons: "/Logo.png"
 };
 
