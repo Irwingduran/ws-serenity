@@ -622,7 +622,7 @@ export default function Home() {
                   <p>serenity.turismomed@gmail.com</p>
                 </div>
                 </a>
-                <a href={"https://wa.me/5216195695034?text=Hello%20Doctor%2C%20I%20found%20your%20website%20and%20I%20would%20like%20to%20schedule%20a%20consultation"}>
+                <a href={"https://wa.me/16195695034?text=Hello%20Doctor%2C%20I%20found%20your%20website%20and%20I%20would%20like%20to%20schedule%20a%20consultation"}>
                 <div className="flex items-center">
                   <Phone className="w-6 h-6 mr-2" />
                   <p>+52 619 569 5034</p>
