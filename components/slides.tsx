@@ -90,7 +90,7 @@ const galleryItems = [
     type: "facility",
     title: "",
     description: "",
-    image: "/location/IMG_0015.jpg",
+    image: "/location/IMG_0035.jpg",
   },
   {
     id: 13,
@@ -104,7 +104,7 @@ const galleryItems = [
     type: "facility",
     title: "",
     description: "",
-    image: "/location/IMG_0017.jpg",
+    image: "/location/IMG_0042.jpg",
   },
   {
     id: 15,
@@ -139,7 +139,7 @@ const galleryItems = [
     type: "facility",
     title: "",
     description: "",
-    image: "/location/IMG_0022.jpg",
+    image: "/location/IMG_0049.jpg",
   },
   {
     id: 20,
