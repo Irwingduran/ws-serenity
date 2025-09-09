@@ -613,10 +613,10 @@ export default function Home() {
                 <a href={"https://maps.app.goo.gl/2NC9r8PKYcahpgdL7"}>
                 <div className="flex items-center">
                   <MapPin className="w-6 h-6 mr-2" />
-                  <p>2P4P+P24 San Bernardino Tlaxcalancingo, Puebla.</p>
+                  <p>Facial Surgery Lomas, Tlaxcalancingo Puebla.</p> <br />
                 </div> 
                 </a>
-                <a href={"mailto:serenity.turismomed@gmail.com"}>
+                <a href={"mailto:serenity.turismomed@gmail.com"}> <br />
                 <div className="flex items-center">
                   <Mail className="w-6 h-6 mr-2" />
                   <p>serenity.turismomed@gmail.com</p>
