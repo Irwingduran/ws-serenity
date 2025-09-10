@@ -616,10 +616,10 @@ export default function Home() {
                   <p>Facial Surgery Lomas, Tlaxcalancingo Puebla.</p> <br />
                 </div> 
                 </a>
-                <a href={"mailto:serenity.turismomed@gmail.com"}> <br />
+                <a href={"mailto:serenity.turismomed@gmail.com"}> 
                 <div className="flex items-center">
                   <Mail className="w-6 h-6 mr-2" />
-                  <p>serenity.turismomed@gmail.com</p>
+                  <p>serenity.turismomed@gmail.com</p> <br />
                 </div>
                 </a>
                 <a href={"https://wa.me/16195695034?text=Hello%20Doctor%2C%20I%20found%20your%20website%20and%20I%20would%20like%20to%20schedule%20a%20consultation"}>
