@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react"
 import type React from "react"
+import emailjs from 'emailjs-com'
 
 import { Button } from "../components/ui/button"
 import { Textarea } from "./ui/textarea"
@@ -64,6 +65,29 @@ const StepByStepGuide = () => {
   const [completedSteps, setCompletedSteps] = useState<number[]>([])
   const [surgeryType, setSurgeryType] = useState<string | null>(null)
   const [showForm, setShowForm] = useState(false)
+
+  // Form fields - Contact info
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+
+  // Form fields - Surgery info
+  const [procedure, setProcedure] = useState('')
+  const [expectations, setExpectations] = useState('')
+  const [weightLoss, setWeightLoss] = useState('')
+  const [nutrition, setNutrition] = useState('')
+  const [bodyArea, setBodyArea] = useState('')
+  const [concerns, setConcerns] = useState('')
+  const [expectedResults, setExpectedResults] = useState('')
+
+  // Form states
+  const [formLoading, setFormLoading] = useState(false)
+  const [formSuccess, setFormSuccess] = useState(false)
+  const [formError, setFormError] = useState(false)
+
+  const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
+  const EMAILJS_TEMPLATE_ID_STEP = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID_STEP
+  const EMAILJS_USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID
 
   const steps = [
     {
@@ -137,6 +161,73 @@ const StepByStepGuide = () => {
     return completedSteps.includes(stepNumber)
   }
 
+  const handleFormSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setFormLoading(true)
+    setFormSuccess(false)
+    setFormError(false)
+
+    try {
+      // Build the title based on surgery type and procedure
+      const title = `${surgeryType?.toUpperCase()} - ${procedure}`
+
+      const templateParams = {
+        name: name,
+        email: email,
+        phone: phone,
+        title: title,
+        surgeryType: surgeryType,
+        procedure: procedure,
+        expectations: expectations,
+        ...(surgeryType === 'bariatric' && {
+          weightLoss: weightLoss,
+          nutrition: nutrition,
+        }),
+        ...(surgeryType === 'plastic' && {
+          bodyArea: bodyArea,
+          concerns: concerns,
+          expectedResults: expectedResults,
+        }),
+      }
+
+      console.log('Sending consultation form:', templateParams)
+
+      const response = await emailjs.send(
+        EMAILJS_SERVICE_ID!,
+        EMAILJS_TEMPLATE_ID_STEP!,
+        templateParams,
+        EMAILJS_USER_ID
+      )
+
+      console.log('EmailJS Success:', response)
+      setFormSuccess(true)
+
+      // Reset form
+      setName('')
+      setEmail('')
+      setPhone('')
+      setSurgeryType(null)
+      setProcedure('')
+      setExpectations('')
+      setWeightLoss('')
+      setNutrition('')
+      setBodyArea('')
+      setConcerns('')
+      setExpectedResults('')
+
+      // Close form after 3 seconds
+      setTimeout(() => {
+        setShowForm(false)
+        setFormSuccess(false)
+      }, 3000)
+    } catch (err) {
+      console.error('EmailJS Error:', err)
+      setFormError(true)
+    } finally {
+      setFormLoading(false)
+    }
+  }
+
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <h2 className="text-3xl font-bold text-center py-10 text-[#507775]">Step-by-Step Guide for Your Surgery in Puebla</h2>
@@ -204,10 +295,60 @@ const StepByStepGuide = () => {
                   <div className="mt-6 p-6 border border-gray-200 rounded-lg">
                     <h4 className="text-xl font-semibold text-[#507775] mb-4">Initial Form</h4>
 
-                    <div className="space-y-6">
+                    <form onSubmit={handleFormSubmit} className="space-y-6">
+                      {/* Contact Information */}
+                      <div className="space-y-4 pb-4 border-b border-gray-200">
+                        <h5 className="font-semibold text-[#507775]">Contact Information</h5>
+
+                        <div>
+                          <Label htmlFor="name" className="text-gray-700 font-medium">
+                            Full Name *
+                          </Label>
+                          <Input
+                            id="name"
+                            placeholder="Your full name"
+                            className="mt-1"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            required
+                          />
+                        </div>
+
+                        <div>
+                          <Label htmlFor="email" className="text-gray-700 font-medium">
+                            Email *
+                          </Label>
+                          <Input
+                            id="email"
+                            type="email"
+                            placeholder="your.email@example.com"
+                            className="mt-1"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                          />
+                        </div>
+
+                        <div>
+                          <Label htmlFor="phone" className="text-gray-700 font-medium">
+                            Phone Number *
+                          </Label>
+                          <Input
+                            id="phone"
+                            type="tel"
+                            placeholder="(+1) 123-456-7890"
+                            className="mt-1"
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)}
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      {/* Surgery Information */}
                       <div>
                         <Label htmlFor="surgery-type" className="text-gray-700 font-medium">
-                          What type of surgery are you interested in?
+                          What type of surgery are you interested in? *
                         </Label>
                         <RadioGroup value={surgeryType || ""} onValueChange={setSurgeryType} className="mt-2 space-y-2">
                           <div className="flex items-center space-x-2">
@@ -229,6 +370,9 @@ const StepByStepGuide = () => {
                               id="procedure"
                               placeholder="E.g.: 360 Liposculpture, Gastric Sleeve..."
                               className="mt-1"
+                              value={procedure}
+                              onChange={(e) => setProcedure(e.target.value)}
+                              required
                             />
                           </div>
                         )}
@@ -242,6 +386,9 @@ const StepByStepGuide = () => {
                           id="expectations"
                           placeholder="Describe what results you expect to obtain..."
                           className="mt-1"
+                          value={expectations}
+                          onChange={(e) => setExpectations(e.target.value)}
+                          required
                         />
                       </div>
 
@@ -257,6 +404,8 @@ const StepByStepGuide = () => {
                               id="weight-loss"
                               placeholder="Describe your previous experiences..."
                               className="mt-1"
+                              value={weightLoss}
+                              onChange={(e) => setWeightLoss(e.target.value)}
                             />
                           </div>
 
@@ -268,6 +417,8 @@ const StepByStepGuide = () => {
                               id="nutrition"
                               placeholder="Describe any relevant conditions..."
                               className="mt-1"
+                              value={nutrition}
+                              onChange={(e) => setNutrition(e.target.value)}
                             />
                           </div>
                         </div>
@@ -281,14 +432,26 @@ const StepByStepGuide = () => {
                             <Label htmlFor="body-area" className="text-gray-700">
                               Describe the body area you would like to treat.
                             </Label>
-                            <Textarea id="body-area" placeholder="E.g.: Abdomen, arms, face..." className="mt-1" />
+                            <Textarea
+                              id="body-area"
+                              placeholder="E.g.: Abdomen, arms, face..."
+                              className="mt-1"
+                              value={bodyArea}
+                              onChange={(e) => setBodyArea(e.target.value)}
+                            />
                           </div>
 
                           <div>
                             <Label htmlFor="concerns" className="text-gray-700">
                               Do you have any specific concerns about the procedure?
                             </Label>
-                            <Textarea id="concerns" placeholder="Describe your concerns..." className="mt-1" />
+                            <Textarea
+                              id="concerns"
+                              placeholder="Describe your concerns..."
+                              className="mt-1"
+                              value={concerns}
+                              onChange={(e) => setConcerns(e.target.value)}
+                            />
                           </div>
 
                           <div>
@@ -299,13 +462,28 @@ const StepByStepGuide = () => {
                               id="expected-results"
                               placeholder="Describe your expectations..."
                               className="mt-1"
+                              value={expectedResults}
+                              onChange={(e) => setExpectedResults(e.target.value)}
                             />
                           </div>
                         </div>
                       )}
 
-                      <Button className="w-full bg-[#77B5B2] hover:bg-[#507775] text-white">Submit Form</Button>
-                    </div>
+                      <Button
+                        type="submit"
+                        className="w-full bg-[#77B5B2] hover:bg-[#507775] text-white"
+                        disabled={formLoading}
+                      >
+                        {formLoading ? 'Sending...' : 'Submit Form'}
+                      </Button>
+
+                      {formSuccess && (
+                        <p className="text-green-600 text-center">Form submitted successfully! We'll contact you soon.</p>
+                      )}
+                      {formError && (
+                        <p className="text-red-600 text-center">Something went wrong. Please try again.</p>
+                      )}
+                    </form>
                   </div>
                 )}
               </div>
