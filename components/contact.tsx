@@ -13,17 +13,31 @@ const ContactSection = () => {
   const [formSuccess, setFormSuccess] = useState(false);
   const [formError, setFormError] = useState(false);
 
-  const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID;
-  const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID;
-  const EMAILJS_USER_ID = process.env.EMAILJS_USER_ID;
+  const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  const EMAILJS_USER_ID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormLoading(true);
     setFormSuccess(false);
     setFormError(false);
+
+    console.log('EmailJS Config:', {
+      serviceId: EMAILJS_SERVICE_ID,
+      templateId: EMAILJS_TEMPLATE_ID,
+      userId: EMAILJS_USER_ID
+    });
+
+    console.log('Form Data:', {
+      formName,
+      formEmail,
+      formPhone,
+      formMessage
+    });
+
     try {
-      await emailjs.send(
+      const response = await emailjs.send(
         EMAILJS_SERVICE_ID!,
         EMAILJS_TEMPLATE_ID!,
         {
@@ -34,12 +48,14 @@ const ContactSection = () => {
         },
         EMAILJS_USER_ID
       );
+      console.log('EmailJS Success:', response);
       setFormSuccess(true);
       setFormName('');
       setFormEmail('');
       setFormPhone('');
       setFormMessage('');
     } catch (err) {
+      console.error('EmailJS Error:', err);
       setFormError(true);
     } finally {
       setFormLoading(false);
