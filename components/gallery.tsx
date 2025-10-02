@@ -12,7 +12,8 @@ const GallerySection = () => {
   const [activeCategory, setActiveCategory] = useState<string>('all');
   
   const galleryImages: GalleryImage[] = [
-        { src: "/gallery/rino/rino1.jpg", category: "Rino", alt: " injury " },
+    { src: "/gallery/bariatric/bariatric11.jpg", category: "Lipo", alt: "before and after" },
+    { src: "/gallery/bariatric/bariatric12.jpg", category: "Lipo", alt: "before and after" },  
     { src: "/gallery/bariatric/bariatric1.jpg", category: "Bariatric", alt: "before and after" },
     { src: "/gallery/bariatric/bariatric2.jpg", category: "Bariatric", alt: "before and after" },
     { src: "/gallery/bariatric/bariatric3.jpg", category: "Bariatric", alt: "before and after" },
@@ -21,16 +22,14 @@ const GallerySection = () => {
     { src: "/gallery/bariatric/bariatric6.jpg", category: "Bariatric", alt: "before and after" },
    { src: "/gallery/bariatric/bariatric7.jpg", category: "Bariatric", alt: "before and after" },
    { src: "/gallery/bariatric/bariatric8.jpg", category: "Bariatric", alt: "before and after" },
-   { src: "/gallery/bariatric/bariatric9.jpg", category: "Bariatric", alt: "before and after" },     
-    { src: "/gallery/bariatric/bariatric11.jpg", category: "Bariatric", alt: "before and after" },
-   { src: "/gallery/bariatric/bariatric12.jpg", category: "Bariatric", alt: "before and after" },        
+   { src: "/gallery/bariatric/bariatric9.jpg", category: "Bariatric", alt: "before and after" },           
 
     // Add more images with appropriate categories
   ];
 
   const categories = [
     { id: 'all', name: 'All Procedures' },
-    { id: 'Rino', name: 'Rino' },
+    { id: 'Lipo', name: 'Lipo' },
     { id: 'Bariatric', name: 'Bariatric' },
    // { id: 'Prostate', name: 'Prostate' },
  //   { id: 'Facial Surgery', name: 'Facial Surgery' },
