@@ -11,12 +11,6 @@ interface Doctor {
 }
 
 const doctors: Doctor[] = [
-    { 
-    name: "Dr. Edgar Serrano", 
-    specialty: "Bariatric & Metabolic Surgery", 
-    id: "doctor5",
-    imageUrl: "/dr-serrano.jpg"
-  },
   { 
     name: "Dr. Irvin Hans Garduño", 
     specialty: "Rhinology & Facial Aesthetic Surgery", 
@@ -41,7 +35,12 @@ const doctors: Doctor[] = [
     id: "doctor4",
     imageUrl: "/dr-jesus.jpg"
   },
-
+  { 
+    name: "Dr. Edgar Serrano", 
+    specialty: "Bariatric & Metabolic Surgery", 
+    id: "doctor5",
+    imageUrl: "/dr-serrano.jpeg"
+  }
 
 ];
 

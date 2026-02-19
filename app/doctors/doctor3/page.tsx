@@ -109,7 +109,7 @@ const Page = () => {
             Hospital Angeles Puebla considered the most exclusive and equipped hospital in the State of Puebla.
             </p>
             <Link 
-              href="/https://www.findoctor.com.mx/doctores/bruno-rubi-lopez" 
+              href="https://www.findoctor.com.mx/doctores/bruno-rubi-lopez" 
               className="px-6 py-3 bg-[#77B5B2] text-white rounded-lg hover:bg-[#5a9c99] transition-colors font-medium"
             >
               Findoctor Profile →

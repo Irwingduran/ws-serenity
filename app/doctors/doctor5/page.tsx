@@ -82,7 +82,7 @@ const Page = () => {
             <div className="w-full md:w-1/3 lg:w-1/4">
               <div className="bg-gray-100 rounded-xl overflow-hidden aspect-square">
                 <Image
-                  src="/dr-serrano.jpg"
+                  src="/dr-serrano.jpeg"
                   alt="Dr. Edgar Serrano"
                   width={300}
                   height={300}
@@ -159,12 +159,12 @@ const Page = () => {
                 </p>
               </div>
               <a
-                href={`https://${doctor.website}`}
+                href={`https://www.findoctor.com.mx/doctores/edgar-serrano-garcia`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-[#77B5B2] text-white rounded-lg hover:bg-[#5a9c99] transition-colors font-medium"
               >
-                Official Website →
+                Findoctor Profile →
               </a>
             </div>
           </div>
@@ -452,18 +452,12 @@ const Page = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href={`tel:${doctor.phoneUS}`}
-                className="px-8 py-3 bg-white text-[#507775] rounded-lg hover:bg-gray-100 transition-colors font-medium"
-              >
-                Call: {doctor.phoneUS}
-              </a>
-              <a
-                href={`https://${doctor.website}`}
+                href={`https://www.findoctor.com.mx/doctores/edgar-serrano-garcia`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 border-2 border-white text-white rounded-lg hover:bg-white/10 transition-colors font-medium"
               >
-                Visit Website
+                Findoctor Profile
               </a>
             </div>
           </div>

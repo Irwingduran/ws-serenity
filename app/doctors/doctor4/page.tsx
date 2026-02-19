@@ -109,7 +109,7 @@ const Page = () => {
             Angelopolis Medical Towers ia a medical complex that offers specialized medical care services and has limited hours of operation.
             </p>
             <Link 
-              href="/https://www.findoctor.com.mx/doctores/jesus-antonio-riano-rodriguez" 
+              href="https://www.findoctor.com.mx/doctores/jesus-antonio-riano-rodriguez" 
               className="px-6 py-3 bg-[#77B5B2] text-white rounded-lg hover:bg-[#5a9c99] transition-colors font-medium"
             >
               Findoctor Profile →
