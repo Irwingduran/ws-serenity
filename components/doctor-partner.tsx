@@ -11,6 +11,12 @@ interface Doctor {
 }
 
 const doctors: Doctor[] = [
+    { 
+    name: "Dr. Edgar Serrano", 
+    specialty: "Bariatric & Metabolic Surgery", 
+    id: "doctor5",
+    imageUrl: "/dr-serrano.jpg"
+  },
   { 
     name: "Dr. Irvin Hans Garduño", 
     specialty: "Rhinology & Facial Aesthetic Surgery", 
@@ -34,7 +40,8 @@ const doctors: Doctor[] = [
     specialty: "Plastic Surgery", 
     id: "doctor4",
     imageUrl: "/dr-jesus.jpg"
-  }
+  },
+
 
 ];
 
@@ -44,7 +51,7 @@ export default function PartnerDoctors() {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-semibold text-[#77B5B2] text-center mb-12">Our Partner Doctors</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {doctors.map((doctor) => (
             <DoctorCard key={doctor.id} doctor={doctor} />
           ))}
