@@ -40,34 +40,53 @@ const floatingLinks = [
 
 const FloatingButtons = () => {
   return (
-    <div className="fixed bottom-6 right-4 z-50 flex flex-col items-end gap-3 sm:right-6">
-      {floatingLinks.map((link, i) => (
-        <motion.a
-          key={link.label}
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.1 + i * 0.05 }}
-          href={link.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group inline-flex h-11 items-center gap-2 rounded-full bg-primary px-4 text-primary-foreground shadow-lg transition-transform hover:scale-105"
-          title={link.label}
-          aria-label={link.label}
+    <div className="fixed bottom-6 right-4 z-50 flex flex-col items-end gap-2 sm:right-6">
+      {/* Social icons row */}
+      <div className="flex items-center gap-2">
+        {floatingLinks.filter(l => l.label !== "Agendar").map((link, i) => (
+          <motion.a
+            key={link.label}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.1 + i * 0.05 }}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-muted text-foreground shadow-md transition-transform hover:scale-110 hover:bg-primary hover:text-primary-foreground"
+            title={link.label}
+            aria-label={link.label}
         >
           <link.icon className="h-4 w-4" />
-          <span className="text-sm font-semibold">{link.label}</span>
-        </motion.a>
+          </motion.a>
       ))}
+      </div>
+      
+      {/* Agendar button */}
+      <motion.a
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
+        href="https://calendar.app.google/6qLbKZjmkZA3nQ238"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex h-11 items-center gap-2 rounded-full bg-primary px-5 text-primary-foreground shadow-lg transition-transform hover:scale-105"
+        title="Agendar"
+        aria-label="Agendar"
+      >
+        <Calendar className="h-4 w-4" />
+        <span className="text-sm font-semibold">Agendar</span>
+      </motion.a>
 
+      {/* WhatsApp button */}
       <a
         href="https://api.whatsapp.com/send/?phone=16195695034"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition-transform hover:scale-110"
+        className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[hsl(142,70%,45%)] text-white shadow-lg transition-transform hover:scale-110"
         title="WhatsApp"
         aria-label="WhatsApp"
       >
-        <WhatsAppIcon className="h-7 w-7" />
+        <WhatsAppIcon className="h-6 w-6" />
       </a>
     </div>
   );
