@@ -25,11 +25,11 @@ const config: Config = {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			primary: {
-  				DEFAULT: '#0066B3',
+  				DEFAULT: 'hsl(var(--primary))',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {
-  				DEFAULT: '#FFB800',
+  				DEFAULT: 'hsl(var(--secondary))',
   				foreground: 'hsl(var(--secondary-foreground))'
   			},
   			card: {
@@ -58,7 +58,15 @@ const config: Config = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
+  			},
+  			teal: {
+  				dark: 'hsl(var(--teal-dark))',
+  				light: 'hsl(var(--teal-light))'
   			}
+  		},
+  		fontFamily: {
+  			sans: ['Montserrat', 'sans-serif'],
+  			display: ['Montserrat', 'sans-serif']
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
