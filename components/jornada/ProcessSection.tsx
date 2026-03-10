@@ -27,7 +27,7 @@ const steps = [
   {
     icon: HeartHandshake,
     title: "Recuperación",
-    desc: "2 noches de hospitalización, seguimiento postoperatorio virtual al regresar a casa.",
+    desc: "1 noche de hospitalización, seguimiento postoperatorio virtual al regresar a casa.",
   },
 ];
 
