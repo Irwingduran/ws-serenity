@@ -40,7 +40,7 @@ const Navbar = () => {
               />
               <div>
                 <h1 className="text-[#77B5B2] text-xl font-semibold">Serenity Surgery Planner</h1>
-                <p className="text-[#507775] text-sm">MEXICANS SPECIALISTS</p>
+                <p className="text-[#507775] text-sm">PLASTIC AND BARIATRIC SURGERY</p>
               </div>
             </div>
           </Link>
