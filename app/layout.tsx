@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Serenity",
-  description: "Serenity, Serenity Surgery Planner, Clinic specializing in bariatric surgery, Rhinoplasty, Mammoplasty and liposculpture.", 
+  description: "Serenity Surgery Planner, bariatric surgery in Puebla Mexico, Rhinoplasty in Puebla Mexico , Mammoplasty  in Puebla Mexico , Gastric Sleeve Puebla Mexico.", 
   icons: "/Logo.png"
 };
 
