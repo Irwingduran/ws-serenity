@@ -49,7 +49,7 @@ const HeroSection = () => {
               De: $85,000 MXN
             </p>
             <p className="text-5xl md:text-6xl font-black">
-              A: $69,000 <span className="text-2xl font-normal">MXN</span>
+              A: $75,000 <span className="text-2xl font-normal">MXN</span>
             </p>
           </motion.div>
 
@@ -62,7 +62,7 @@ const HeroSection = () => {
           >
             <span className="inline-flex items-center gap-3 bg-primary-foreground/20 backdrop-blur-sm rounded-full px-6 py-3 border border-primary-foreground/30">
               <span className="text-2xl">📅</span>
-              <span className="text-xl font-semibold">Viernes 27 de Marzo</span>
+              <span className="text-xl font-semibold">20 y 21 de Abril</span>
             </span>
             <span className="inline-flex items-center gap-3 bg-primary-foreground/20 backdrop-blur-sm rounded-full px-6 py-3 border border-primary-foreground/30">
               <span className="text-2xl">📍</span>
