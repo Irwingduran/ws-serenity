@@ -310,7 +310,7 @@ export default function Home() {
             />
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-[#507775] mb-4">Gastric sleeve in Puebla, Mexico</h3>
+            <h3 className="text-2xl font-bold text-[#507775] mb-4">Gastric Sleeve in Puebla, Mexico</h3>
             <p className="text-gray-700">
               Weight loss procedures designed to help individuals manage obesity and improve overall health through surgical intervention.
             </p>
