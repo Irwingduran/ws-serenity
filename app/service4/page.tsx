@@ -30,7 +30,7 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
   {/* Services Section */}
   <section className="py-16 px-4 bg-white">
     <div className="max-w-7xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#507775] text-center mb-8">Bariatric Surgery</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-[#507775] text-center mb-8">Bariatric Surgery in Puebla, Mexico</h2>
       <p className="text-lg text-center mb-12">
         We specialize in weight loss surgery to help you achieve lasting results. Discover how our bariatric
         procedures can transform your health and quality of life.
