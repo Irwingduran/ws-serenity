@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Jornada de Manga Gástrica | Serenity Surgery Planner",
   description:
     "Manga Gástrica en Puebla, México. Cirugía bariátrica, Dr. Edgar Serrano García, bariatría",
-  logo: "/logo.png",
+  icons: "/logo.png"
 };
 
 export default function JornadaLayout({
