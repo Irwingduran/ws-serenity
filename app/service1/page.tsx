@@ -32,7 +32,7 @@ const Page = () => {
       {/* Services Section */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#507775] text-center mb-8">Liposculpture 360</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#507775] text-center mb-8">Liposculpture 360 in Puebla, Mexico</h2>
           <p className="text-lg text-center mb-12">
             We specialize in body contouring to help you achieve your desired silhouette. Discover how our Lipoescultura
             360 services can enhance your natural curves.
