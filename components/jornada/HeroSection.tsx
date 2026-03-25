@@ -107,7 +107,7 @@ const HeroSection = () => {
           className="flex-1 hidden lg:flex justify-end"
         >
           <Image
-            src="/jornadamangagastrica/hero-manga.jpg"
+            src="/jornadamangagastrica/hero-manga.png"
             alt="Transformación con Manga Gástrica"
             width={600}
             height={800}
