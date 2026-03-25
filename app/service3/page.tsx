@@ -30,7 +30,7 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
   {/* Services Section */}
   <section className="py-16 px-4 bg-white">
     <div className="max-w-7xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#507775] text-center mb-8">Rhinoplasty</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-[#507775] text-center mb-8">Rhinoplasty in Puebla, Mexico</h2>
       <p className="text-lg text-center mb-12">
         We specialize in nasal surgery to enhance both form and function. Discover how our rhinoplasty procedures can improve your facial aesthetics and breathing.
       </p>
