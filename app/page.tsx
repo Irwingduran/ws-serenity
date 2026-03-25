@@ -103,19 +103,20 @@ export default function Home() {
   }}
 >
   <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20 lg:py-32 text-center text-[#507775]">
-    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Serenity Surgery Planner</h1>
-    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Specialists in Puebla, Mexico</h2>
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Plastic and Cosmetic Surgery in Puebla Mexcio</h1>
+    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Bariatric surgery in Puebla, Mexico</h2>
 
     <div className="space-y-2 max-w-2xl mx-auto text-base sm:text-lg md:text-xl">
-      <p>Surgeries offered 7 days a week</p>
-      <p>5-Star hotel stay included</p>
+      <p>Certified surgeons</p>
+      <p>we speak english</p>
+      <p>surgery in a specialized hospital</p>
       <p>Driver & guide including airport pickup / drop-off</p>
     </div>
 
     <p className="mt-6 sm:mt-8 text-base sm:text-lg">
       We specialize in 
       <Link href="#services" className="underline ml-1">
-        Plastic Surgery Services
+        Plastic Surgery Services in Puebla, Mexico
       </Link>
       .
     </p>
@@ -209,7 +210,7 @@ export default function Home() {
       {/* Service Section */}
       <section className="py-16 px-4 bg-[#77B5B2]" id="services">
       <div className="max-w-5xl mx-auto">
-    <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-6">Our Services</h2>
+    <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-6">Our Services in Puebla, Mexico</h2>
 
     <p className="text-white text-center text-lg mb-12">
       We offer the following bariatric weight loss procedures in addition to various weight loss revision
@@ -229,7 +230,7 @@ export default function Home() {
             />
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-[#507775] mb-4">Liposculpture 360</h3>
+            <h3 className="text-2xl font-bold text-[#507775] mb-4">Liposculpture 360 in Puebla, Mexico</h3>
             <p className="text-gray-700">
               A comprehensive body contouring procedure that targets fat deposits around the entire midsection, helping patients achieve a more sculpted and balanced figure.
             </p>
@@ -249,7 +250,7 @@ export default function Home() {
             />
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-[#507775] mb-4">Mammoplasty</h3>
+            <h3 className="text-2xl font-bold text-[#507775] mb-4">Mammoplasty in Puebla, Mexico</h3>
             <p className="text-gray-700">
               Surgical procedures to enhance, reduce, or reconstruct the breasts, tailored to the patient's aesthetic goals or medical needs.
             </p>
@@ -269,7 +270,7 @@ export default function Home() {
             />
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-[#507775] mb-4">Rhinoplasty</h3>
+            <h3 className="text-2xl font-bold text-[#507775] mb-4">Rhinoplasty in Puebla, Mexico</h3>
             <p className="text-gray-700">
               Specialized surgeries addressing both functional and cosmetic concerns of the head and neck, including rhinoplasty and facial contouring.
             </p>
@@ -289,7 +290,27 @@ export default function Home() {
             />
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-[#507775] mb-4">Bariatric Surgery</h3>
+            <h3 className="text-2xl font-bold text-[#507775] mb-4">Bariatric Surgery in Puebla, Mexico</h3>
+            <p className="text-gray-700">
+              Weight loss procedures designed to help individuals manage obesity and improve overall health through surgical intervention.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="/service4">
+        <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
+          <div className="flex-shrink-0 flex items-center justify-center">
+            <Image
+              src="/service/img1.jpg"
+              alt="Gastric Bypass Illustration"
+              width={200}
+              height={200}
+              className="w-40 h-40"
+            />
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold text-[#507775] mb-4">Gastric sleeve in Puebla, Mexico</h3>
             <p className="text-gray-700">
               Weight loss procedures designed to help individuals manage obesity and improve overall health through surgical intervention.
             </p>
