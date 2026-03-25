@@ -108,8 +108,8 @@ export default function Home() {
 
     <div className="space-y-2 max-w-2xl mx-auto text-base sm:text-lg md:text-xl">
       <p>Certified surgeons</p>
-      <p>we speak english</p>
-      <p>surgery in a specialized hospital</p>
+      <p>We speak english</p>
+      <p>Surgery in a specialized hospital</p>
       <p>Driver & guide including airport pickup / drop-off</p>
     </div>
 
