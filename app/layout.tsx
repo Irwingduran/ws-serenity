@@ -16,7 +16,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Serenity",
   description: "Serenity Surgery Planner, bariatric surgery in Puebla Mexico, Rhinoplasty in Puebla Mexico, Mammoplasty in Puebla Mexico, Gastric Sleeve Puebla Mexico", 
-  icons: "/Logo.png"
+  icons: "/logo.png"
 };
 
 export default function RootLayout({
