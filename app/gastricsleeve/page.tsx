@@ -168,20 +168,17 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
           </div>
         </div>
 
-                <div className="space-y-8">
+        <div className="space-y-8">
           {/* Benefits */}
           <div className="bg-[#F5F7FA] p-8 rounded-lg shadow-md">
-            <h3 className="text-2xl font-bold text-[#507775] mb-4">Why Choose Us?</h3>
+            <h3 className="text-2xl font-bold text-[#507775] mb-4">Who is a Good Candidate?</h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-4">
                 <div className="w-8 h-8 bg-[#77B5B2] text-white rounded-full flex items-center justify-center">
                   ✓
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[#507775]">Board-Certified Surgeons</h4>
-                  <p className="text-gray-600">
-                    Specialists with extensive experience in bariatric procedures.
-                  </p>
+                  <h4 className="font-semibold text-[#507775]">BMI of 35 or higher</h4>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -189,8 +186,7 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
                   ✓
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[#507775]">Multidisciplinary Team</h4>
-                  <p className="text-gray-600">Nutritionists, psychologists and physicians working together for your success.</p>
+                  <h4 className="font-semibold text-[#507775]">Previous diet and exercise attempts without sustained results</h4>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -198,8 +194,31 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
                   ✓
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[#507775]">Comprehensive Care</h4>
-                  <p className="text-gray-600">From pre-op evaluation to long-term follow-up for optimal results.</p>
+                  <h4 className="font-semibold text-[#507775]">No uncontrolled psychiatric condition</h4>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-[#77B5B2] text-white rounded-full flex items-center justify-center">
+                  ✓
+                </div>
+                <div>
+                  <h4 className="font-semibold text-[#507775]">BMI 30+ with obesity-related conditions (diabetes, hypertension, sleep apnea)</h4>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-[#77B5B2] text-white rounded-full flex items-center justify-center">
+                  ✓
+                </div>
+                <div>
+                  <h4 className="font-semibold text-[#507775]">No previous bariatric procedure (or evaluated for revision)</h4>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-[#77B5B2] text-white rounded-full flex items-center justify-center">
+                  ✓
+                </div>
+                <div>
+                  <h4 className="font-semibold text-[#507775]">Commitment to long-term dietary changes</h4>
                 </div>
               </div>
             </div>
