@@ -238,7 +238,7 @@ export default function Home() {
         </div>
       </a>
       
-      <a href="/service2">
+      <a href="/mammoplasty">
         <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
           <div className="flex-shrink-0 flex items-center justify-center">
             <Image
@@ -258,7 +258,7 @@ export default function Home() {
         </div>
       </a>
       
-      <a href="/service3">
+      <a href="/rhinoplasty">
         <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
           <div className="flex-shrink-0 flex items-center justify-center">
             <Image
@@ -278,7 +278,7 @@ export default function Home() {
         </div>
       </a>
       
-      <a href="/service4">
+      <a href="/bariatricsurgery">
         <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
           <div className="flex-shrink-0 flex items-center justify-center">
             <Image
@@ -298,7 +298,7 @@ export default function Home() {
         </div>
       </a>
 
-      <a href="/service4">
+      <a href="/gastricsleeve">
         <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
           <div className="flex-shrink-0 flex items-center justify-center">
             <Image
