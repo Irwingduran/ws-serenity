@@ -30,7 +30,7 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
   {/* Services Section */}
   <section className="py-16 px-4 bg-white">
     <div className="max-w-7xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#507775] text-center mb-8">Bariatric Surgery in Puebla, Mexico</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-[#507775] text-center mb-8">Gastric Sleeve in Puebla, Mexico</h2>
       <p className="text-lg text-center mb-12">
         We specialize in weight loss surgery to help you achieve lasting results. Discover how our bariatric
         procedures can transform your health and quality of life.
@@ -41,13 +41,16 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
         {/* Left Column: Service Overview */}
         <div className="space-y-8">
           <div className="bg-[#F5F7FA] p-8 rounded-lg shadow-md">
-            <h3 className="text-2xl font-bold text-[#507775] mb-4">What is Bariatric Surgery?</h3>
+            <h3 className="text-2xl font-bold text-[#507775] mb-4">What is Gastric Sleeve?</h3>
             <p className="text-gray-600 mb-4">
-              Bariatric surgery refers to various procedures that help with weight loss by making changes to your digestive system. These surgeries are life-changing solutions for individuals struggling with obesity.
+              Gastric sleeve surgery — also called sleeve gastrectomy or vertical sleeve gastrectomy — is the most commonly performed bariatric procedure worldwide. During the operation, approximately 80% of the stomach is removed laparoscopically, creating a tube-shaped "sleeve" roughly the size of a banana.
+            </p>
+            <p className="text-gray-600 mb-4">
+              The reduced stomach size limits food intake and — critically — significantly lowers ghrelin, the hormone responsible for hunger. Patients report feeling full faster and feeling far less hungry between meals. This hormonal change is a key reason gastric sleeve produces long-lasting results beyond simple restriction.
             </p>
             <ul className="list-disc list-inside text-gray-600">
-              <li>Proven long-term weight loss results</li>
-              <li>Improvement or remission of obesity-related conditions</li>
+              <li>60% - 70% Excess weight lost on average within 18 months</li>
+              <li>90 min surgery duration</li>
               <li>Minimally invasive techniques with faster recovery</li>
             </ul>
           </div>
@@ -128,6 +131,44 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
 
         {/* Right Column: Benefits and Testimonials */}
         <div className="space-y-8">
+          {/* Benefits */}
+          <div className="bg-[#F5F7FA] p-8 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold text-[#507775] mb-4">Why Choose Us?</h3>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-[#77B5B2] text-white rounded-full flex items-center justify-center">
+                  ✓
+                </div>
+                <div>
+                  <h4 className="font-semibold text-[#507775]">Board-Certified Surgeons</h4>
+                  <p className="text-gray-600">
+                    Specialists with extensive experience in bariatric procedures.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-[#77B5B2] text-white rounded-full flex items-center justify-center">
+                  ✓
+                </div>
+                <div>
+                  <h4 className="font-semibold text-[#507775]">Multidisciplinary Team</h4>
+                  <p className="text-gray-600">Nutritionists, psychologists and physicians working together for your success.</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 bg-[#77B5B2] text-white rounded-full flex items-center justify-center">
+                  ✓
+                </div>
+                <div>
+                  <h4 className="font-semibold text-[#507775]">Comprehensive Care</h4>
+                  <p className="text-gray-600">From pre-op evaluation to long-term follow-up for optimal results.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                <div className="space-y-8">
           {/* Benefits */}
           <div className="bg-[#F5F7FA] p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-[#507775] mb-4">Why Choose Us?</h3>
