@@ -302,7 +302,7 @@ export default function Home() {
         <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
           <div className="flex-shrink-0 flex items-center justify-center">
             <Image
-              src="/service/img1.jpg"
+              src="/service/img33.jpg"
               alt="Gastric Bypass Illustration"
               width={200}
               height={200}
