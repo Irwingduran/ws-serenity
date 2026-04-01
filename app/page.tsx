@@ -14,11 +14,11 @@ import PartnerDoctors from "../components/doctor-partner";
 import MedicalTourismSection from "../components/medical-tourism";
 import GallerySection from "../components/gallery";
 import WelcomeModal from "../components/modal";
-import PricingTable from "../components/pricing-table"
 import StepByStepGuide from "../components/step-by-step-guide"
 import QASection from "../components/qa-section";
 import ContactSection from "../components/contact";
 import AboutSection from "../components/about";
+import VideoGallery from "../components/video-gallery";
 
 export default function Home() {
 
@@ -360,15 +360,12 @@ export default function Home() {
       <PartnerDoctors/>
     </section>
 
+     {/* Videos Serenity */}
+     <VideoGallery />
+
      {/* Surgeries most popular */}
      <section>
     <div className="flex flex-col min-h-screen">
-    {/* Pricing Table Section */}
-    <section className="py-16 px-4 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
-        <PricingTable />
-      </div>
-    </section>
 
     {/* Benefits Section */}
     <section className="py-16 px-4 bg-gradient-to-r from-[#77B5B2]/20 to-[#507775]/10">
