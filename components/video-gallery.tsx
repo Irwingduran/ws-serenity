@@ -12,15 +12,11 @@ const videoCategories: VideoCategory[] = [
     name: "Liposculpture",
     videos: [
       "https://www.facebook.com/reel/923611360658702/",
-      "https://www.facebook.com/reel/923611360658702/",
-      "https://www.facebook.com/reel/923611360658702/",
     ],
   },
   {
     name: "Mammoplasty",
     videos: [
-      "https://www.facebook.com/reel/923611360658702/",
-      "https://www.facebook.com/reel/923611360658702/",
       "https://www.facebook.com/reel/923611360658702/",
     ],
   },
@@ -28,15 +24,11 @@ const videoCategories: VideoCategory[] = [
     name: "Rhinoplasty",
     videos: [
       "https://www.facebook.com/reel/1660502114332141/",
-      "https://www.facebook.com/reel/1660502114332141/",
-      "https://www.facebook.com/reel/1660502114332141/",
     ],
   },
   {
     name: "Bariatric Surgery",
     videos: [
-      "https://www.facebook.com/reel/1672154647086518/",
-      "https://www.facebook.com/reel/1672154647086518/",
       "https://www.facebook.com/reel/1672154647086518/",
     ],
   },
@@ -45,8 +37,6 @@ const videoCategories: VideoCategory[] = [
     videos: [
       "https://www.facebook.com/reel/2052446145544318/",
       "https://www.facebook.com/reel/1892238564991271/",
-      "https://www.facebook.com/reel/26388583827400065/",
-      "https://www.facebook.com/reel/942094915049157/",
       "https://www.facebook.com/reel/1511610409954077/",
       "https://www.facebook.com/reel/931868529531821/",
       "https://www.facebook.com/reel/906241362185430/",
