@@ -138,7 +138,7 @@ const Page = () => {
 
           {/* Bio */}
           <div>
-            <h3 className="text-xl font-semibold text-[#507775] mb-4">About Dr. Garduño</h3>
+            <h3 className="text-xl font-semibold text-[#507775] mb-4">About Dr. Riaño</h3>
             <p className="text-gray-700 mb-4">{doctor.bio}</p>
             {/* Bio 
             <Link href="#" className="text-[#77B5B2] hover:text-[#5a9c99] font-medium inline-flex items-center">
