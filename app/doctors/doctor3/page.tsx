@@ -6,7 +6,7 @@ import Navbar from '../../../components/navbar';
 import Footer from '../../../components/footer';
 
 const doctor = {
-    name: "Dr. Bruno Rubi Lopez",
+    name: "Dr. Bruno Rubí Lopez",
     specialty: "Prostate Surgery",
     facility: "Hospital Angeles Puebla",
     location: "Puebla, Mexico",
