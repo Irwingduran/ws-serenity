@@ -36,7 +36,7 @@ const Page = () => {
                 <svg className="w-3 h-3 mx-1 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path>
                 </svg>
-                <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">Dr. Blass</span>
+                <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">Dr. Blas</span>
               </div>
             </li>
           </ol>
@@ -138,7 +138,7 @@ const Page = () => {
 
           {/* Bio */}
           <div>
-            <h3 className="text-xl font-semibold text-[#507775] mb-4">About Dr. Serrano</h3>
+            <h3 className="text-xl font-semibold text-[#507775] mb-4">About Dr. Blas</h3>
             <p className="text-gray-700 mb-4">{doctor.bio}</p>
             {/* Bio 
             <Link href="#" className="text-[#77B5B2] hover:text-[#5a9c99] font-medium inline-flex items-center">
