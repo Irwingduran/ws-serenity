@@ -103,7 +103,7 @@ export default function Home() {
   }}
 >
   <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20 lg:py-32 text-center text-[#507775]">
-    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Plastic and Cosmetic Surgery in Puebla Mexcio</h1>
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Plastic and Cosmetic Surgery in Puebla Mexico</h1>
     <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Bariatric surgery in Puebla, Mexico</h2>
 
     <div className="space-y-2 max-w-2xl mx-auto text-base sm:text-lg md:text-xl">
