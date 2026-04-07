@@ -107,7 +107,8 @@ export default function Home() {
     <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Bariatric surgery in Puebla, Mexico</h2>
 
     <div className="space-y-2 max-w-2xl mx-auto text-base sm:text-lg md:text-xl">
-      <p>Certified surgeons</p>
+      <p>Bariatric in puebla certified surgeons</p>
+      <p>Plastic in puebla certified surgeons</p>
       <p>We speak english</p>
       <p>Surgery in a specialized hospital</p>
       <p>Driver & guide including airport pickup / drop-off</p>
