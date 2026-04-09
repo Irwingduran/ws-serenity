@@ -20,25 +20,25 @@ const doctors: Doctor[] = [
   { 
     name: "Dr. Ricardo Blas", 
     specialty: "Bariatric Surgery", 
-    id: "doctor2",
+    id: "DrRicardoBlas",
     imageUrl: "/blass.avif"
   },
   { 
     name: "Dr. Bruno Rubí", 
     specialty: "Prostate Surgery", 
-    id: "doctor3",
+    id: "DrBrunoRubi",
     imageUrl: "/dr-bruno.png"
   },
   { 
     name: "Dr. Jesús Antonio Riaño", 
     specialty: "Plastic Surgery", 
-    id: "doctor4",
+    id: "DrAntonioRiaño",
     imageUrl: "/dr-jesus.jpg"
   },
   { 
     name: "Dr. Edgar Serrano", 
     specialty: "Bariatric & Metabolic Surgery", 
-    id: "doctor5",
+    id: "DrEdgarSerrano",
     imageUrl: "/dr-serrano.jpeg"
   }
 
