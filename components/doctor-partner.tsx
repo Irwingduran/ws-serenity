@@ -14,7 +14,7 @@ const doctors: Doctor[] = [
   { 
     name: "Dr. Irvin Hans Garduño", 
     specialty: "Rhinology & Facial Aesthetic Surgery", 
-    id: "doctor1",
+    id: "DrIrvinHans",
     imageUrl: "/dr-irvin.png" 
   },
   { 
