@@ -101,7 +101,7 @@ const Page = () => {
                 <div>
                   <h3 className="text-sm font-semibold text-gray-500 mb-1">Exclusive Surgical Program</h3>
                   <p className="text-lg text-gray-800">{doctor.location}</p>
-                  <p className="text-sm text-gray-600">{doctor.locationSecondary}</p>
+                  {/* <p className="text-sm text-gray-600">{doctor.locationSecondary}</p>*/}
                 </div>
                 <div>
                   <h3 className="text-sm font-semibold text-gray-500 mb-1">Languages</h3>
