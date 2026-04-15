@@ -18,11 +18,11 @@ return ( <div className="flex flex-col min-h-screen"> <Navbar />
     style={{ backgroundImage: "url('/service/img4.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}
   >
     <div className="max-w-7xl mx-auto px-4 py-20 md:py-32 text-center text-black">
-      <h1 className="text-4xl md:text-6xl font-bold mb-4">Transform Your Health</h1>
-      <h2 className="text-2xl md:text-4xl font-semibold mb-4">Expert Bariatric Surgery Procedures</h2>
-      <h3 className="text-xl md:text-3xl font-medium mb-12">Achieve Sustainable Weight Loss and Improved Wellbeing</h3>
+      <h1 className="text-4xl md:text-6xl font-bold mb-4">Laparoscopic Gastric Sleeve in Puebla</h1>
+      <h2 className="text-2xl md:text-4xl font-semibold mb-4">Safe, Minimally Invasive Weight Loss Surgery with All-Inclusive Care</h2>
+      <h3 className="text-xl md:text-3xl font-medium mb-12">Lose 60-80% of excess weight. High-quality bariatric care at a fraction of U.S. costs.</h3>
       <Button className="mt-8 bg-[#77B5B2] hover:bg-[#507775] text-white px-8 py-6 text-lg rounded-full">
-        Book Your Consultation
+        Check If I’m a Candidate (Free Evaluation)
       </Button>
     </div>
   </section>
