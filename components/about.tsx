@@ -28,14 +28,11 @@ const AboutSection = () => {
     <section className="py-16 px-4 bg-white" id="about">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-[#507775] mb-8">
-          About Us
+          Your Trusted Partner for Medical Tourism in Puebla, Mexico
         </h2>
 
         <p className="text-lg mb-4">
-          At Serenity Surgery Planner, we specialize in coordinating safe, high-quality bariatric and plastic surgeries in Puebla, Mexico — designed especially
-          for international patients from the U.S. and South America. Our certified surgeons, personalized care, and all-inclusive planning make your medical
-          journey seamless, from first contact to full recovery. Trusted by patients from Texas, South America and beyond, we offer confidence, professionalism,
-          and human warmth in every step of your transformation.
+          Our team of Board-Certified surgeons and bilingual medical hosts provide a seamless, all-inclusive experience. From direct flight coordination to premium recovery stays, we handle every detail so you can focus on your transformation. Trusted by hundreds of international patients, we combine American safety standards with the world-renowned medical expertise of Puebla.
         </p>
 
         {/* Video Carousel */}
