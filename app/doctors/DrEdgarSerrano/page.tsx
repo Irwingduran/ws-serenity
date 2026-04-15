@@ -10,7 +10,6 @@ const doctor = {
   specialty: "Bariatric & Metabolic Surgery",
   facility: "Tijuana, BC (New City Medical Plaza and Rio Médica Hospital )",
   location: "Puebla, Mexico (Serenity Surgery at Unidad Hospitalaria Crystal )",
-  locationSecondary: "Puebla, Mexico (Surgical Program)",
   languages: "English & Spanish",
   licenseSpecialty: "Board-Certified Bariatric & Metabolic Surgeon",
   website: "http://drserranomd.com",
