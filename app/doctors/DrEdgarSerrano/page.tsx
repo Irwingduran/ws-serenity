@@ -6,16 +6,14 @@ import Navbar from '../../../components/navbar';
 import Footer from '../../../components/footer';
 
 const doctor = {
-  name: "Dr. Edgar Serrano",
+  name: "Dr. Edgar Serrano | Board-Certified Bariatric Surgeon in Mexico",
   specialty: "Bariatric & Metabolic Surgery",
-  facility: "MEDSUITES 25th Floor – Torre Médica New City Medical",
-  location: "Tijuana, Baja California, Mexico",
+  facility: "Tijuana, BC (New City Medical Plaza and Rio Médica Hospital )",
+  location: "Puebla, Mexico (Serenity Surgery at Unidad Hospitalaria Crystal )",
   locationSecondary: "Puebla, Mexico (Surgical Program)",
   languages: "English & Spanish",
   licenseSpecialty: "Board-Certified Bariatric & Metabolic Surgeon",
-  phoneUS: "+1 (619) 559-1437",
-  phoneMX: "664 732 95 16",
-  website: "www.dredgarserrano.com",
+  website: "http://drserranomd.com",
   bio: "Dr. Edgar Serrano is a board-certified bariatric and metabolic surgeon specializing in advanced minimally invasive weight-loss surgery for patients traveling from the United States to Mexico. Through Serenity Surgery Planner, patients are guided through a structured and medically supervised cross-border surgical program designed to prioritize safety, transparency, and long-term metabolic health.",
   procedures: [
     "Laparoscopic Sleeve Gastrectomy",
@@ -98,11 +96,11 @@ const Page = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div>
-                  <h3 className="text-sm font-semibold text-gray-500 mb-1">Surgical Facility</h3>
+                  <h3 className="text-sm font-semibold text-gray-500 mb-1">Primary Practice</h3>
                   <p className="text-lg text-gray-800">{doctor.facility}</p>
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-gray-500 mb-1">Location</h3>
+                  <h3 className="text-sm font-semibold text-gray-500 mb-1">Exclusive Surgical Program</h3>
                   <p className="text-lg text-gray-800">{doctor.location}</p>
                   <p className="text-sm text-gray-600">{doctor.locationSecondary}</p>
                 </div>
@@ -119,7 +117,7 @@ const Page = () => {
               {/* Contact Info */}
               <div className="bg-[#f0f9f8] rounded-lg p-4 mb-4">
                 <h3 className="text-sm font-semibold text-[#507775] mb-3">Contact Information</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="flex items-center gap-2">
                     <span className="text-[#77B5B2]">📞</span>
                     <div>
@@ -134,7 +132,7 @@ const Page = () => {
                       <p className="text-gray-800 font-medium">{doctor.phoneMX}</p>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className="mt-3">
                   <a href={`https://${doctor.website}`} target="_blank" rel="noopener noreferrer" className="text-[#77B5B2] hover:text-[#5a9c99] font-medium inline-flex items-center">
                     🌐 {doctor.website}
@@ -151,11 +149,11 @@ const Page = () => {
         {/* Hospital Info */}
         <section className="bg-gray-50 py-8">
           <div className="max-w-7xl mx-auto px-4">
-            <h2 className="text-2xl font-semibold text-[#507775] mb-4">Office Location</h2>
+            <h2 className="text-2xl font-semibold text-[#507775] mb-4">Premium Bariatric Surgery in Puebla with Dr. Edgar Serrano</h2>
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
               <div>
                 <p className="text-gray-600 max-w-2xl">
-                  {doctor.facility} - Zona Río, Tijuana, Baja California, Mexico. Conveniently located near the U.S.–Mexico border for international patients traveling from California and other U.S. states.
+                  {doctor.facility} - Through our partnership with Serenity Surgery Planner, Dr. Edgar Serrano brings his surgical expertise to the historic city of Puebla. Patients traveling from Houston and Dallas can access world-class Gastric Sleeve and Bypass procedures in Puebla's top-tier private hospitals, led by one of Mexico’s leading bariatric specialists.
                 </p>
               </div>
               <a
