@@ -5,7 +5,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "..
 import Navbar from "../../components/navbar"
 import Footer from "../../components/footer"
 import { ChevronRight } from "lucide-react"
-import RequiredStudiesPage from "../../components/required-studies"
 
 const Page = () => {
   const [activeTab, setActiveTab] = useState("services")
@@ -372,7 +371,6 @@ const Page = () => {
               </div>
               */}
 
-              <RequiredStudiesPage/>
 
       {/* Call to Action */}
       <section className="py-16 px-4 bg-[#77B5B2]/10">

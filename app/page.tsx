@@ -316,8 +316,8 @@ export default function Home() {
           </a>
 
           {/* Bariatric Revision */}
-          <div className="group">
-            <div className="bg-white rounded-xl p-6 h-full flex flex-col gap-3">
+          <a href="/" className="group">
+            <div className="bg-white rounded-xl p-6 h-full flex flex-col gap-3 hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
               <div className="w-16 h-16 rounded-lg bg-[#F5F7FA] flex items-center justify-center">
                 <span className="text-2xl">🔄</span>
               </div>
@@ -332,8 +332,11 @@ export default function Home() {
                 previous bariatric surgery to restore or enhance weight loss
                 results.
               </p>
+                  <span className="text-[#77B5B2] text-sm font-semibold mt-auto">
+                Learn more →
+              </span>
             </div>
-          </div>
+          </a>
         </div>
       </div>
 
@@ -350,7 +353,8 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
           {/* Mommy Makeover */}
-          <div className="bg-white rounded-xl p-6 flex gap-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+          <a href="/" className="group">
+            <div className="bg-white rounded-xl p-6 flex gap-4 h-full hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
             <div className="text-3xl shrink-0">🌸</div>
             <div>
               <h4 className="text-base font-bold text-[#507775] mb-1">
@@ -361,7 +365,8 @@ export default function Home() {
                 pre-pregnancy body in a single surgical plan.
               </p>
             </div>
-          </div>
+          </div> 
+          </a>
 
           {/* Breast Procedures */}
           <a href="/MammoplastyInPuebla" className="group">

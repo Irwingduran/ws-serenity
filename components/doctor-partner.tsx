@@ -14,31 +14,31 @@ const doctors: Doctor[] = [
   { 
     name: "Dr. Irvin Hans Garduño", 
     specialty: "Rhinology & Facial Aesthetic Surgery", 
-    id: "DrIrvinHans",
+    id: "dr-irvin-hans",
     imageUrl: "/dr-irvin.png" 
   },
   { 
     name: "Dr. Ricardo Blas", 
     specialty: "Bariatric Surgery", 
-    id: "DrRicardoBlas",
+    id: "dr-ricardo-blas",
     imageUrl: "/blass.avif"
   },
   { 
     name: "Dr. Bruno Rubí", 
     specialty: "Prostate Surgery", 
-    id: "DrBrunoRubi",
+    id: "dr-bruno-rubi",
     imageUrl: "/dr-bruno.png"
   },
   { 
     name: "Dr. Jesús Antonio Riaño", 
     specialty: "Plastic Surgery", 
-    id: "DrAntonioRiaño",
+    id: "dr-antonio-riano",
     imageUrl: "/dr-jesus.jpg"
   },
   { 
     name: "Dr. Edgar Serrano", 
     specialty: "Bariatric & Metabolic Surgery", 
-    id: "DrEdgarSerrano",
+    id: "dr-edgar-serrano",
     imageUrl: "/dr-serrano.jpeg"
   }
 
