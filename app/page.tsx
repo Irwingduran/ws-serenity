@@ -93,7 +93,7 @@ export default function Home() {
       {/* Navigation */}
       <Navbar/>
 
-     {/* Hero Section */}
+{/* Hero Section */}
 <section
   className="relative bg-[#F5F7FA]/80 bg-blend-overlay"
   style={{
@@ -102,34 +102,61 @@ export default function Home() {
     backgroundPosition: "center",
   }}
 >
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20 lg:py-32 text-center text-[#507775]">
-    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Certified Bariatric and Plastic Surgery in Puebla, Mexico</h1>
-    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Serenity Surgery Planner</h1>
-    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Safe, All-Inclusive Surgical Plans with Direct Flights from Houston & Dallas.</h2>
+  <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-24 lg:py-36 text-center text-[#507775]">
 
-    <div className="space-y-2 max-w-2xl mx-auto text-base sm:text-lg md:text-xl">
-      <p>Board-Certified Bariatric & Plastic Surgeons.</p>
-      <p>100% English-Speaking Medical Staff & Personal Hosts.</p>
-      <p>Surgery in a specialized hospital</p>
-      <p>VIP Transportation: Direct Pickup from PBC Airport</p>
-    </div>
-
-    <p className="mt-6 sm:mt-8 text-base sm:text-lg">
-      We specialize in 
-      <Link href="#services" className="underline ml-1">
-        Plastic Surgery Services in Puebla, Mexico
-      </Link>
-      .
+    {/* Eyebrow / Contexto geográfico */}
+    <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-[#77B5B2] mb-4">
+      Certified Bariatric & Plastic Surgery · Puebla, Mexico
     </p>
 
+    {/* Marca como H1 principal */}
+    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+      Serenity Surgery Planner
+    </h1>
+
+    {/* Propuesta de valor como H2 */}
+    <h2 className="text-lg sm:text-xl md:text-2xl font-medium max-w-2xl mx-auto mb-10 leading-relaxed text-[#507775]/90">
+      Safe, all-inclusive surgical plans with direct flights from{" "}
+      <span className="font-semibold text-[#507775]">Houston & Dallas</span>.
+    </h2>
+
+    {/* CTA principal */}
     <a href="/plans/home">
-      <Button className="mt-6 sm:mt-8 bg-[#77B5B2] hover:bg-[#507775] text-white px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg rounded-full">
+      <Button className="mb-12 bg-[#77B5B2] hover:bg-[#507775] text-white px-8 py-5 sm:px-10 sm:py-6 text-base sm:text-lg rounded-full transition-colors duration-200">
         See our surgical plans & what&apos;s included
       </Button>
     </a>
+
+    {/* Separador visual */}
+    <div className="border-t border-[#77B5B2]/30 pt-10 max-w-3xl mx-auto">
+
+      {/* Beneficios en grid */}
+      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm sm:text-base text-left">
+        {[
+          "Board-Certified Bariatric & Plastic Surgeons",
+          "100% English-Speaking Medical Staff & Personal Hosts",
+          "Surgery in a Specialized Hospital",
+          "VIP Transportation: Direct Pickup from PBC Airport",
+        ].map((benefit) => (
+          <li key={benefit} className="flex items-start gap-2">
+            <span className="mt-0.5 text-[#77B5B2] shrink-0">✦</span>
+            <span>{benefit}</span>
+          </li>
+        ))}
+      </ul>
+
+      {/* Link secundario */}
+      <p className="mt-8 text-sm sm:text-base text-[#507775]/70">
+        We specialize in{" "}
+        <Link href="#services" className="underline underline-offset-4 hover:text-[#507775] transition-colors">
+          Plastic Surgery Services in Puebla, Mexico
+        </Link>
+        .
+      </p>
+    </div>
+
   </div>
 </section>
-
       {/* About Section */}
       <AboutSection />
 
@@ -209,152 +236,245 @@ export default function Home() {
       </section>
 
       {/* Service Section */}
-      <section className="py-16 px-4 bg-[#77B5B2]" id="services">
-      <div className="max-w-5xl mx-auto">
-    <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-6">Our Services in Puebla, Mexico</h2>
+<section className="py-16 px-4 bg-[#77B5B2]" id="services">
+  <div className="max-w-5xl mx-auto">
 
-    <p className="text-white text-center text-lg mb-12">
-      We offer the following bariatric weight loss procedures in addition to various weight loss revision
-      surgeries and body contouring procedures.
+    {/* Section Header */}
+    <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
+      Our Services in Puebla, Mexico
+    </h2>
+    <p className="text-white/80 text-center text-lg mb-16 max-w-2xl mx-auto">
+      We offer comprehensive bariatric and plastic surgery procedures with
+      all-inclusive plans designed for international patients.
     </p>
 
-    <div className="space-y-10">
-      <a href="/LiposculptureInPuebla">
-        <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
-          <div className="flex-shrink-0 flex items-center justify-center">
-            <Image
-              src="/service/img4.jpg"
-              alt="Gastric Sleeve Illustration"
-              width={200}
-              height={200}
-              className="w-40 h-40"
-            />
-          </div>
-          <div>
-            <h3 className="text-2xl font-bold text-[#507775] mb-4">Liposculpture 360 in Puebla, Mexico</h3>
-            <p className="text-gray-700">
-              A comprehensive body contouring procedure that targets fat deposits around the entire midsection, helping patients achieve a more sculpted and balanced figure.
-            </p>
-          </div>
-        </div>
-      </a>
-      
-      <a href="/MammoplastyInPuebla">
-        <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
-          <div className="flex-shrink-0 flex items-center justify-center">
-            <Image
-              src="/service/img33.jpg"
-              alt="Gastric Bypass Illustration"
-              width={200}
-              height={200}
-              className="w-40 h-40"
-            />
-          </div>
-          <div>
-            <h3 className="text-2xl font-bold text-[#507775] mb-4">Mammoplasty in Puebla, Mexico</h3>
-            <p className="text-gray-700">
-              Surgical procedures to enhance, reduce, or reconstruct the breasts, tailored to the patient's aesthetic goals or medical needs.
-            </p>
-          </div>
-        </div>
-      </a>
-      
-      <a href="/RhinoplastyInPuebla">
-        <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
-          <div className="flex-shrink-0 flex items-center justify-center">
-            <Image
-              src="/service/img22.jpg"
-              alt="Gastric Bypass Illustration"
-              width={200}
-              height={200}
-              className="w-40 h-40"
-            />
-          </div>
-          <div>
-            <h3 className="text-2xl font-bold text-[#507775] mb-4">Rhinoplasty in Puebla, Mexico</h3>
-            <p className="text-gray-700">
-              Specialized surgeries addressing both functional and cosmetic concerns of the head and neck, including rhinoplasty and facial contouring.
-            </p>
-          </div>
-        </div>
-      </a>
-      
-      <a href="/BariatricsurgeryInPuebla">
-        <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
-          <div className="flex-shrink-0 flex items-center justify-center">
-            <Image
-              src="/service/img1.jpg"
-              alt="Gastric Bypass Illustration"
-              width={200}
-              height={200}
-              className="w-40 h-40"
-            />
-          </div>
-          <div>
-            <h3 className="text-2xl font-bold text-[#507775] mb-4">Bariatric Surgery in Puebla, Mexico</h3>
-            <p className="text-gray-700">
-              Weight loss procedures designed to help individuals manage obesity and improve overall health through surgical intervention.
-            </p>
-          </div>
-        </div>
-      </a>
+    <div className="space-y-14">
 
-      <a href="/GastricsleeveInPuebla">
-        <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
-          <div className="flex-shrink-0 flex items-center justify-center">
-            <Image
-              src="/service/img4.jpg"
-              alt="Gastric Bypass Illustration"
-              width={200}
-              height={200}
-              className="w-40 h-40"
-            />
-          </div>
-          <div>
-            <h3 className="text-2xl font-bold text-[#507775] mb-4">Gastric Sleeve in Puebla, Mexico</h3>
-            <p className="text-gray-700">
-              Gastric sleeve surgery — also called sleeve gastrectomy or vertical sleeve gastrectomy — is the most commonly performed bariatric procedure worldwide.
-            </p>
-          </div>
+      {/* ── RUBRO 1: Weight Loss & Bariatric ── */}
+      <div>
+        <div className="flex items-center gap-4 mb-8">
+          <div className="h-px flex-1 bg-white/30" />
+          <h3 className="text-xl sm:text-2xl font-bold text-white whitespace-nowrap">
+            Weight Loss &amp; Bariatric Surgery
+          </h3>
+          <div className="h-px flex-1 bg-white/30" />
         </div>
-      </a>
 
-      {/* Additional Services Section */}
-      <div className="text-center">
-        <h3 className="text-2xl font-bold text-white mb-6">Other Specialized Procedures</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="bg-white rounded-lg p-6">
-            <h4 className="text-xl font-semibold text-[#507775] mb-2">Pubis Lift</h4>
-          </div>
-          <div className="bg-white rounded-lg p-6">
-            <h4 className="text-xl font-semibold text-[#507775] mb-2">Arm Lift (Brachioplasty)</h4>
-          </div>
-          <div className="bg-white rounded-lg p-6">
-            <h4 className="text-xl font-semibold text-[#507775] mb-2">Thigh Lift (Cruroplasty)</h4>
-          </div>
-          <div className="bg-white rounded-lg p-6">
-            <h4 className="text-xl font-semibold text-[#507775] mb-2">Back Lift (Dorsoplasty)</h4>
-          </div>
-          <div className="bg-white rounded-lg p-6">
-            <h4 className="text-xl font-semibold text-[#507775] mb-2">Torsoplasty</h4>
-          </div>
-          <div className="bg-white rounded-lg p-6">
-            <h4 className="text-xl font-semibold text-[#507775] mb-2">Gluteoplasty</h4>
-          </div>
-          <div className="bg-white rounded-lg p-6">
-            <h4 className="text-xl font-semibold text-[#507775] mb-2">Buttock Implant Removal</h4>
-          </div>
-          <div className="bg-white rounded-lg p-6">
-            <h4 className="text-xl font-semibold text-[#507775] mb-2">Labiaplasty</h4>
-          </div>
-          <div className="bg-white rounded-lg p-6">
-            <h4 className="text-xl font-semibold text-[#507775] mb-2">Vaginoplasty</h4>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {/* Gastric Sleeve */}
+          <a href="/GastricsleeveInPuebla" className="group">
+            <div className="bg-white rounded-xl p-6 h-full flex flex-col gap-3 hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+              <Image
+                src="/service/img4.jpg"
+                alt="Gastric Sleeve"
+                width={80}
+                height={80}
+                className="w-16 h-16 object-cover rounded-lg"
+              />
+              <h4 className="text-lg font-bold text-[#507775] group-hover:text-[#77B5B2] transition-colors">
+                Gastric Sleeve
+              </h4>
+              <p className="text-xs text-gray-400 uppercase tracking-wide font-medium">
+                Sleeve Gastrectomy
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed flex-1">
+                The most commonly performed bariatric procedure worldwide.
+                Reduces stomach size to limit food intake and promote lasting
+                weight loss.
+              </p>
+              <span className="text-[#77B5B2] text-sm font-semibold mt-auto">
+                Learn more →
+              </span>
+            </div>
+          </a>
+
+          {/* Bariatric Surgery / Gastric Bypass */}
+          <a href="/BariatricsurgeryInPuebla" className="group">
+            <div className="bg-white rounded-xl p-6 h-full flex flex-col gap-3 hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+              <Image
+                src="/service/img1.jpg"
+                alt="Gastric Bypass"
+                width={80}
+                height={80}
+                className="w-16 h-16 object-cover rounded-lg"
+              />
+              <h4 className="text-lg font-bold text-[#507775] group-hover:text-[#77B5B2] transition-colors">
+                Gastric Bypass
+              </h4>
+              <p className="text-xs text-gray-400 uppercase tracking-wide font-medium">
+                Roux-en-Y
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed flex-1">
+                A proven weight loss procedure that reroutes the digestive
+                system to reduce calorie absorption and improve metabolic
+                health.
+              </p>
+              <span className="text-[#77B5B2] text-sm font-semibold mt-auto">
+                Learn more →
+              </span>
+            </div>
+          </a>
+
+          {/* Bariatric Revision */}
+          <div className="group">
+            <div className="bg-white rounded-xl p-6 h-full flex flex-col gap-3">
+              <div className="w-16 h-16 rounded-lg bg-[#F5F7FA] flex items-center justify-center">
+                <span className="text-2xl">🔄</span>
+              </div>
+              <h4 className="text-lg font-bold text-[#507775]">
+                Bariatric Revision Surgery
+              </h4>
+              <p className="text-xs text-gray-400 uppercase tracking-wide font-medium">
+                Corrective Procedures
+              </p>
+              <p className="text-gray-600 text-sm leading-relaxed flex-1">
+                Corrective procedures for patients who need adjustments to a
+                previous bariatric surgery to restore or enhance weight loss
+                results.
+              </p>
+            </div>
           </div>
         </div>
       </div>
+
+      {/* ── RUBRO 2: Plastic & Reconstructive ── */}
+      <div>
+        <div className="flex items-center gap-4 mb-8">
+          <div className="h-px flex-1 bg-white/30" />
+          <h3 className="text-xl sm:text-2xl font-bold text-white whitespace-nowrap">
+            Plastic &amp; Reconstructive Surgery
+          </h3>
+          <div className="h-px flex-1 bg-white/30" />
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+          {/* Mommy Makeover */}
+          <div className="bg-white rounded-xl p-6 flex gap-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+            <div className="text-3xl shrink-0">🌸</div>
+            <div>
+              <h4 className="text-base font-bold text-[#507775] mb-1">
+                Mommy Makeover
+              </h4>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Combined breast and abdominal procedures to restore your
+                pre-pregnancy body in a single surgical plan.
+              </p>
+            </div>
+          </div>
+
+          {/* Breast Procedures */}
+          <a href="/MammoplastyInPuebla" className="group">
+            <div className="bg-white rounded-xl p-6 flex gap-4 h-full hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+              <Image
+                src="/service/img33.jpg"
+                alt="Breast Procedures"
+                width={56}
+                height={56}
+                className="w-14 h-14 object-cover rounded-lg shrink-0"
+              />
+              <div>
+                <h4 className="text-base font-bold text-[#507775] mb-1 group-hover:text-[#77B5B2] transition-colors">
+                  Breast Procedures
+                </h4>
+                <p className="text-gray-500 text-xs uppercase tracking-wide mb-2">
+                  Mammoplasty · Augmentation · Lift
+                </p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Tailored surgical options to enhance, reduce, or reconstruct
+                  the breasts according to your goals.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          {/* Body Contouring */}
+          <a href="/LiposculptureInPuebla" className="group">
+            <div className="bg-white rounded-xl p-6 flex gap-4 h-full hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+              <Image
+                src="/service/img4.jpg"
+                alt="Body Contouring"
+                width={56}
+                height={56}
+                className="w-14 h-14 object-cover rounded-lg shrink-0"
+              />
+              <div>
+                <h4 className="text-base font-bold text-[#507775] mb-1 group-hover:text-[#77B5B2] transition-colors">
+                  Body Contouring
+                </h4>
+                <p className="text-gray-500 text-xs uppercase tracking-wide mb-2">
+                  Liposculpture 360 · Tummy Tuck
+                </p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Sculpt and redefine your silhouette targeting fat deposits
+                  and loose skin across the midsection and beyond.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          {/* Facial Surgery */}
+          <a href="/RhinoplastyInPuebla" className="group">
+            <div className="bg-white rounded-xl p-6 flex gap-4 h-full hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+              <Image
+                src="/service/img22.jpg"
+                alt="Facial Surgery"
+                width={56}
+                height={56}
+                className="w-14 h-14 object-cover rounded-lg shrink-0"
+              />
+              <div>
+                <h4 className="text-base font-bold text-[#507775] mb-1 group-hover:text-[#77B5B2] transition-colors">
+                  Facial Surgery
+                </h4>
+                <p className="text-gray-500 text-xs uppercase tracking-wide mb-2">
+                  Rhinoplasty · Facelift
+                </p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Functional and cosmetic procedures of the head and face,
+                  including nose reshaping and facial rejuvenation.
+                </p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      {/* ── Other Specialized Procedures ── */}
+      <div>
+        <div className="flex items-center gap-4 mb-6">
+          <div className="h-px flex-1 bg-white/20" />
+          <h3 className="text-base font-semibold text-white/70 whitespace-nowrap uppercase tracking-widest">
+            Other Specialized Procedures
+          </h3>
+          <div className="h-px flex-1 bg-white/20" />
+        </div>
+        <div className="flex flex-wrap justify-center gap-3">
+          {[
+            "Pubis Lift",
+            "Arm Lift (Brachioplasty)",
+            "Thigh Lift (Cruroplasty)",
+            "Back Lift (Dorsoplasty)",
+            "Torsoplasty",
+            "Gluteoplasty",
+            "Buttock Implant Removal",
+            "Labiaplasty",
+            "Vaginoplasty",
+          ].map((proc) => (
+            <span
+              key={proc}
+              className="bg-white/15 border border-white/25 text-white text-sm px-4 py-2 rounded-full"
+            >
+              {proc}
+            </span>
+          ))}
+        </div>
+      </div>
+
     </div>
-      </div>
-      </section>
+  </div>
+</section>
 
      {/* Partner Doctors */}
      <section className="bg-white py-12 px-4" id="partners">
