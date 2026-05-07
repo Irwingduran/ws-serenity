@@ -62,7 +62,7 @@ const HeroSection = () => {
           >
             <span className="inline-flex items-center gap-3 bg-primary-foreground/20 backdrop-blur-sm rounded-full px-6 py-3 border border-primary-foreground/30">
               <span className="text-2xl">📅</span>
-              <span className="text-xl font-semibold">Sábado 30 de mayo al 1 de Junio</span>
+              <span className="text-xl font-semibold">30 de mayo al 1 de Junio</span>
             </span>
             <span className="inline-flex items-center gap-3 bg-primary-foreground/20 backdrop-blur-sm rounded-full px-6 py-3 border border-primary-foreground/30">
               <span className="text-2xl">📍</span>
